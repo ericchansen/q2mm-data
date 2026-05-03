@@ -1,0 +1,575 @@
+# Q2MM
+# OPT Generated
+bond     C2   C2     4.2828     1.2653
+bond     C2   Rh     7.2409     2.1146
+bond     C2   Rh     9.3784     2.1416
+bond     C2   C2     0.1000     2.0139
+bond     C2   C2     5.1182     1.4426
+bond     P3   Rh     0.6695     2.4094
+bond     C2   P3     2.7504     1.7165
+bond     C2   C2     6.5627     1.3671
+bond     H1   P3     3.4969     1.4357
+bond     C2   P3     2.8618     1.8828
+bond     D1   Rh     0.3307     1.6670
+bond     C2   D1     2.8150     0.7515
+bond     C2   C3     4.0871     1.5151
+bond     C2   C2     0.1087     1.4500
+bond     C2   H1     5.2896     0.9593
+bond     C2   C3     4.2333     1.5152
+bond     C2   H1     5.3948     1.0931
+bond     C2   N3     1.1121     1.3612
+bond     C2   O3     3.2726     1.1114
+bond     C2   C2     4.5194     1.4664
+bond     C2   O2    11.2571     1.2233
+bond     C2   C2     2.2924     1.5118
+bond     C2   O2    12.1258     1.2091
+bond     C2   N2     3.1457     1.4057
+bond     C3   C3     4.4900     1.5177
+bond     C3   C3     4.4900     1.5177
+bond     C3   C3     4.4900     1.5197
+bond     C3   C3     4.4900     1.5097
+bond     C3   C3     4.4900     1.5027
+bond     C3   C3     4.4900     1.5167
+bond     C3   C3     4.4900     1.5127
+bond     C3   C3     4.4900     1.5197
+bond     C3   C3     4.4900     1.5237
+bond     C3   C3     4.4900     1.5337
+bond     C3   C3     4.4900     1.5187
+bond     C3   C3     4.4900     1.5247
+bond     C2   C3     4.8000     1.5090
+bond     C2   C3     6.3000     1.5220
+bond     C2   C3     6.3000     1.4990
+bond     C3   H1     4.7400     1.1100
+bond     C3   H1     4.7400     1.1090
+bond     C3   H1     4.7400     1.1020
+bond     C3   H1     4.7400     1.1070
+bond     C3   H1     4.7400     1.1060
+bond     C3   H1     4.7400     1.1120
+bond     C2   H1     4.3700     1.1180
+bond     C2   H1     5.1500     1.1010
+bond     C1   H1     5.9700     1.0800
+bond     C3   O3     5.7000     1.4130
+bond     C2   O3     5.0500     1.3380
+bond     C2   O3     6.0000     1.3550
+bond     O3   O3     3.9500     1.4540
+bond     O3   O3     3.9500     1.4480
+bond     H2   O3     7.2000     0.9720
+bond     H2   O3     7.6300     0.9640
+bond     H2   O3     7.6300     0.9470
+bond     C2   OM     7.5700     1.2500
+bond     C2   O2     7.5700     1.2500
+bond     C2   O2    10.1000     1.2080
+bond     C2   C2     6.0000     1.4700
+bond     C2   C2     7.5000     1.3430
+bond     C2   C2     7.5000     1.3320
+bond     C2   C2     5.0000     1.5100
+bond     C2   C2     5.0000     1.4600
+bond     C2   C2     5.0000     1.4800
+bond     C2   SX     4.0000     1.7650
+bond     C1   C3     5.5000     1.4700
+bond     C1   C2    11.2000     1.3100
+bond     C1   C2     9.9000     1.3130
+bond     C1   C1    15.2500     1.2100
+bond     C3   N3     5.3000     1.4480
+bond     H3   N3     6.3758     0.8151
+bond     C2   N3     6.3200     1.3780
+bond     N3   N3     5.6000     1.3810
+bond     C3   N2     5.2100     1.4460
+bond     C2   N2     6.7000     1.3770
+bond     C2   N2     6.3000     1.3300
+bond     H3   N2     6.7700     1.0280
+bond     H3   N2     6.7700     1.0280
+bond     C2   N2    10.0000     1.3450
+bond     C1   N1    17.3300     1.1580
+bond     C3   F0     5.1000     1.3460
+bond     C3   F0     5.1000     1.3600
+bond     C3   F0     5.1000     1.3760
+bond     C3   F0     5.1000     1.3800
+bond     C2   F0     5.4000     1.3200
+bond     C3   Cl     3.2300     1.7530
+bond     C3   Cl     3.2300     1.7630
+bond     C3   Cl     3.2300     1.7830
+bond     C2   Cl     3.4000     1.7190
+bond     Br   C3     2.3000     1.9440
+bond     Br   C2     2.5000     1.8800
+bond     C3   I0     2.2000     2.1390
+bond     C2   I0     2.2000     2.0800
+bond     C3   SX     3.2130     1.7840
+bond     H1   SX     3.8000     1.3460
+bond     O2   SX     8.4120     1.4500
+bond     C3   SX     3.2130     1.8050
+bond     H1   SX     3.8000     1.3460
+bond     O2   SX     5.0000     1.4800
+bond     C3   SX     3.0000     1.8050
+bond     H1   SX     3.8700     1.3390
+bond     H1   SX     3.8700     1.3420
+bond     SX   SX     2.6200     2.0370
+bond     SX   SX     2.6200     2.0150
+bond     C3   PX     2.9100     1.8490
+bond     C2   PX     2.9100     1.8280
+bond     H1   PX     3.3300     1.4300
+bond     O3   PX     2.9000     1.6150
+bond     C3   Si     3.0500     1.8720
+bond     C3   Si     3.0500     1.8760
+bond     H1   Si     2.6500     1.4830
+bond     O3   Si     5.5000     1.6260
+bond     C2   Si     3.0000     1.8560
+bond     Si   Si     1.6500     2.3260
+bond     Si   Si     1.6500     2.3200
+bond     Si   Si     1.6500     2.3220
+bond     C3   CR     4.4000     1.4970
+bond     CR   H1     4.6000     1.1010
+bond     C3   CP     7.4000     1.4800
+bond     CP   H1     7.4000     1.0857
+bond     C2   N4     6.8300     1.3250
+bond     C3   N4     5.5000     1.4950
+bond     C2   N4     5.0500     1.4730
+bond     N4   O2     7.5000     1.2225
+bond     N4   OM     7.5000     1.2225
+bond     C3   N5     3.9500     1.4730
+bond     C2   N5    11.0900     1.2600
+bond     H4   N5     5.2400     1.0220
+bond      1    2     6.5600     1.3887
+bond      1    1     5.1600     1.1010
+bond      1    3     6.3000     1.4990
+bond      1    2     5.4177     1.4575
+bond      1    2     6.3200     1.3780
+bond      1    3     5.0000     1.5140
+bond      1    2     4.4000     1.4670
+bond      1    2     4.4000     1.4470
+bond      1    1     5.1300     1.0860
+bond      1    i     3.5000     1.8410
+bond      1    2     5.0000     1.5030
+bond      1    2     4.4000     1.4970
+bond      2    3     9.6000     1.3030
+bond      1    3     5.0000     1.5140
+bond      1    2     4.4000     1.4670
+bond      1    2     4.4000     1.4470
+bond      1    1     5.1300     1.0860
+bond      1    i     3.5000     1.8410
+bond      2    3     4.4000     1.4970
+bond      2    2     9.6000     1.3360
+bond      1    2     4.6000     1.0720
+bond      1    3     5.0000     1.5140
+bond      1    2     4.4000     1.4670
+bond      1    2     4.4000     1.4470
+bond      1    1     5.1300     1.0860
+bond      1    i     3.5000     1.8410
+bond      1    2     5.0000     1.5030
+bond      2    3     6.3000     1.8250
+bond      1    2     4.4900     1.5371
+bond      1    3     4.4900     1.5247
+bond      1    2     6.3000     1.4990
+bond      1    1     4.7400     1.1120
+bond      1    i     1.3000     1.8790
+bond      1    2     4.4900     1.5371
+bond      1    3     4.4900     1.5247
+bond      1    2     6.3000     1.4990
+bond      1    1     4.7400     1.1120
+bond      1    i     1.3000     1.8790
+bond      3    4     3.0000     1.8880
+bond      1    2     7.5000     1.3380
+bond      2    3     6.3000     1.5190
+bond      1    3     6.3000     1.4990
+bond      1    2     7.5000     1.3330
+bond      1    2     9.6000     1.3510
+bond      1    1     5.1500     1.1010
+bond      1    3     6.0000     1.3550
+bond      3    3     4.4900     1.5247
+bond      2    3     6.3000     1.4990
+bond      1    3     4.7400     1.1120
+bond      3    i     1.3000     1.8790
+bond      1    2     4.4900     1.5258
+bond      1    2     6.3000     1.5120
+bond      1    5     4.4900     1.5258
+bond      2    3     7.7000     1.3340
+bond      1    2     4.8000     1.5080
+bond      1    6     4.4900     1.5258
+bond      1    2     7.7000     1.3580
+bond      2    3     7.7000     1.4260
+bond      1    5    10.0000     1.3600
+bond      1    1     5.1500     1.1010
+bond      1    2     5.1500     1.1010
+bond      1    2     7.7000     1.3700
+bond      2    3     7.7000     1.4100
+bond      4    5    11.0900     1.3707
+bond      5   H3     6.1000     1.0500
+bond      1   H1     5.1500     1.1010
+bond      2   H1     5.1500     1.1010
+bond      1    2     9.0000     1.3430
+bond      1    2     7.7000     1.3680
+bond      2    3     7.7000     1.4180
+bond      4    5     6.4710     1.7140
+bond      1    1     5.1500     1.1010
+bond      1    2     5.1500     1.1010
+bond     HX   RH     2.5782     1.5684
+bond     PX   RH     5.0700     2.3914
+bond     PX   RH     1.5293     2.2886
+bond     HX   RH     1.6059     1.6169
+bond     C2   RH     0.0000     2.3388
+bond     C2   RH     1.7138     2.2091
+bond     C2   HX    21.9463     1.7492
+bond     C2   C2     4.1874     1.4281
+angle    C2   Rh   Rh     0.1000   103.9451
+angle    C2   Rh   Rh     0.3338   179.1576
+angle    C2   Rh   P3     0.1155    91.4500
+angle    C2   Rh   P3     0.1441   168.5500
+angle    C2   Rh   Rh     0.2493   177.9734
+angle    C2   Rh   Rh     1.0146    92.4672
+angle    C2   Rh   P3     0.3382   171.1000
+angle    C2   Rh   P3     0.1204    98.2000
+angle    P3   Rh   Rh     0.1704    88.4398
+angle    C2   Rh   C2     1.7386    82.7105
+angle    00   C2   Rh     0.1465   125.9136
+angle    00   C2   C2     1.0335   111.8106
+angle    C2   C2   Rh     1.9528    63.1974
+angle    C2   C2   C2     0.1655   138.0284
+angle    C2   C2   H1     0.5226    97.3654
+angle    C0   C2   C2     0.6965   106.1287
+angle    C2   C2   Rh     0.1079    95.7288
+angle    H1   C2   Rh     0.4064   118.7199
+angle    C0   C2   Rh     0.6917   104.8147
+angle    C2   P3   Rh     0.1024   141.4756
+angle    H1   P3   Rh     0.5605   119.0886
+angle    C2   P3   H1     0.3827   100.5432
+angle    C2   P3   C2     0.2374   104.9099
+angle    C2   P3   C2     0.2042   102.6888
+angle    P3   Rh   P3     0.4461   100.3107
+angle    C2   P3   Rh     0.1398   125.3942
+angle    C2   C2   P3     0.5194   120.0756
+angle    D1   Rh   D1     0.1003    81.3000
+angle    C2   D1   Rh     5.3557    90.0000
+angle    C2   D1   C2     0.2718   180.0000
+angle    C2   C2   D1     0.1057     0.0000
+angle    C0   C2   D1     0.9638   106.0000
+angle    D1   C2   H1     0.1014   122.9167
+angle    C2   C2   H1     0.4539   127.1757
+angle    C2   C2   C3     0.7655   125.9238
+angle    C3   C2   H1     0.5517   124.2707
+angle    C0   C2   C3     1.1480   115.0440
+angle    C2   C2   H1     0.4264   135.4688
+angle    C2   C2   C3     0.6224   134.8579
+angle    C2   C2   C2     0.2641   142.6819
+angle    C2   C2   H1     0.3353   137.0606
+angle    C2   C2   C3     0.7784   125.3438
+angle    C2   C2   O2     1.3998   124.9109
+angle    C2   C2   C2     1.2296   112.5747
+angle    C2   C2   O2     0.5292   128.9297
+angle    C2   C2   N2     0.1001   104.6404
+angle    H1   C3   H1     0.5500   109.4700
+angle    H1   C3   H1     0.5500   107.8000
+angle    H1   C3   H1     0.5500   107.6000
+angle    C3   C3   C3     0.6700   111.0000
+angle    C3   C3   C3     0.6700   110.2000
+angle    C3   C3   C3     0.7000   109.5000
+angle    C3   C3   H1     0.5900   110.7000
+angle    C3   C3   H1     0.5900   109.3100
+angle    C3   C3   H1     0.5900   109.8000
+angle    C2   C3   C3     0.8000   110.6000
+angle    C2   C3   C3     0.5400   110.6000
+angle    C2   C3   C3     0.5400   109.8000
+angle    C2   C3   C3     0.5400   110.6000
+angle    C3   C2   C3     1.2500   116.8000
+angle    C3   C2   C3     0.5400   117.0000
+angle    C2   C2   C3     0.5000   117.0000
+angle    C2   C2   C3     0.5000   116.0000
+angle    C2   C2   C3     0.4700   122.3000
+angle    C2   C3   C2     0.4700   110.2000
+angle    C2   C3   C2     0.4700   110.5100
+angle    C2   C3   C2     0.4700   109.4700
+angle    C2   C3   C2     0.4500   113.0000
+angle    C2   C3   C2     0.4500   115.5000
+angle    C2   C3   C2     0.4500   113.2000
+angle    C2   C2   C2     0.5000   116.0000
+angle    C2   C2   C2     0.7600   122.3000
+angle    C2   C2   C2     0.7600   121.7000
+angle    C2   C2   C2     0.7600   122.0000
+angle    C2   C2   C2     0.6000   115.0000
+angle    C1   C3   C3     0.9600   110.0000
+angle    C1   C3   C3     0.9600   109.7000
+angle    C1   C3   C3     0.9600   108.8000
+angle    C1   C2   C3     0.4700   116.6000
+angle    C2   C1   C2     0.4000   180.0000
+angle    C1   C3   CU     0.4700   110.2000
+angle    C1   C3   CU     0.4700   110.5100
+angle    C1   C3   CU     0.4700   109.4700
+angle    C1   C1   C3     0.3150   180.0000
+angle    C1   C1   CU     0.4700   180.0000
+angle    C3   C2   H1     0.4640   117.3000
+angle    C3   C2   H1     0.4900   117.5000
+angle    C2   C3   H1     0.5400   109.4900
+angle    C2   C3   H1     0.5500   110.4000
+angle    C2   C3   H1     0.5500   109.3100
+angle    C2   C3   H1     0.5500   109.5000
+angle    C2   C2   H1     0.3000   112.0000
+angle    C2   C2   H1     0.5000   117.0000
+angle    C1   C3   H1     0.6800   108.8000
+angle    C1   C3   H1     0.6800   109.4100
+angle    C1   C3   H1     0.6800   109.3900
+angle    C1   C2   H1     0.3000   119.5000
+angle    C1   C1   H1     0.2500   180.0000
+angle    C2   C2   H1     0.4900   120.5000
+angle    C2   C2   H1     0.4900   120.0000
+angle    H1   C2   H1     0.6500   114.5000
+angle    H1   C2   H1     0.4500   119.0000
+angle    C3   C3   CR     0.4500   110.0000
+angle    CR   C3   H1     0.3600   110.0000
+angle    C3   CR   C3     0.4500   120.0000
+angle    C3   CR   H1     0.3600   120.0000
+angle    H1   CR   H1     0.3200   120.0000
+angle    C3   C3   CP     0.5200   109.5000
+angle    CP   C3   H1     0.5200   109.5000
+angle    C3   C3   O3     0.8300   107.9000
+angle    C3   C3   O3     0.8300   107.0000
+angle    C3   C3   O3     0.8300   107.5000
+angle    H1   C3   O3     0.8200   108.7000
+angle    H1   C3   O3     0.8200   108.9000
+angle    H1   C3   O3     0.8200   110.0000
+angle    C3   O3   C3     0.8200   107.2000
+angle    C3   O3   H2     0.7500   106.8000
+angle    H2   O3   H2     0.6300   105.0000
+angle    C3   C2   O3     0.6500   117.1000
+angle    C3   C2   O3     0.5000   120.0000
+angle    H1   C2   O3     0.6500   105.9000
+angle    H1   C2   O3     0.5400   116.4000
+angle    C2   C3   O3     0.7000   109.5000
+angle    C2   C3   O3     0.7000   107.0000
+angle    C2   C2   O3     0.7000   124.3000
+angle    C2   C2   O3     0.6000   120.0000
+angle    C2   O3   C3     0.6000   109.9000
+angle    C2   O3   C3     0.7700   110.8000
+angle    C2   O3   H2     0.3000   106.1000
+angle    C2   O3   H2     0.3600   109.0000
+angle    C2   O3   C2     0.7700   106.8000
+angle    O3   C3   O3     0.5400   108.6000
+angle    C3   O3   O3     1.0580   103.3000
+angle    H2   O3   O3     0.8520    99.5000
+angle    C3   C2   O2     0.8500   123.5000
+angle    H1   C2   O2     0.8500   119.2000
+angle    C2   C2   O2     1.2000   123.0000
+angle    C2   C2   O2     1.2000   122.0000
+angle    O2   C2   O3     0.8000   122.0000
+angle    C3   C3   N3     0.7800   111.0000
+angle    C3   C3   N3     0.7800   108.0000
+angle    C3   C3   N3     0.7800   109.4700
+angle    H1   C3   N3     0.8200   109.3000
+angle    C2   C3   N3     1.0450   110.7400
+angle    C3   C3   N2     0.7500   111.8000
+angle    C3   C3   N2     0.7500   111.3000
+angle    C3   C3   N2     0.7500   109.4800
+angle    H1   C3   N2     0.7600   111.0000
+angle    C2   C3   N2     0.8500   112.3000
+angle    C2   C3   N2     0.8500   110.6000
+angle    C2   C3   N2     0.8500   109.5000
+angle    C2   C2   N2     9.0000   120.0000
+angle    C2   C2   N2     0.6000   125.0000
+angle    C2   C2   N2     0.6000   123.0000
+angle    C3   C2   N2     0.5700   114.4000
+angle    C3   C2   N2     0.5000   117.0000
+angle    H1   C2   N2     0.4400   109.3000
+angle    H1   C2   N2     0.5400   117.0000
+angle    N2   C2   O2     1.0700   124.8000
+angle    C3   C1   N1     0.3350   180.0000
+angle    C3   N3   C3     0.7200   108.2000
+angle    C3   N3   C3     0.7200   107.2000
+angle    C3   N3   H3     0.6000   110.9000
+angle    C3   N3   H3     0.6000   108.1000
+angle    C3   N2   C3     0.7600   122.5000
+angle    C3   N2   H3     0.1900   122.4000
+angle    C2   N2   H3     0.5800   118.5000
+angle    C2   N2   H3     0.5000   110.0000
+angle    H3   N2   H3     0.4100   123.0000
+angle    C2   N3   H3     0.5870   109.5000
+angle    C2   N3   H3     0.5870   109.0000
+angle    C2   N3   C3     0.5980   103.0000
+angle    C2   N3   C3     0.5980   102.5000
+angle    H3   N3   H3     0.6050   107.1000
+angle    H3   N3   H3     0.6050   106.4000
+angle    C2   N2   C3     1.6200   121.1000
+angle    C2   N2   C3     0.6300   119.9000
+angle    C2   N2   C2     0.5000   125.0000
+angle    C3   N3   N3     0.7400   105.5000
+angle    H3   N3   N3     0.4300   103.2000
+angle    N3   C3   N3     1.0450   110.7400
+angle    N2   C2   N2     0.5000   120.0000
+angle    N2   C2   N2     0.4000   120.0000
+angle    C3   C3   SX     0.4200   102.0000
+angle    H1   C3   SX     0.3840   108.6000
+angle    C3   SX   C3     0.7200   102.0000
+angle    C3   SX   O2     0.5970   107.7000
+angle    O2   SX   O2     0.9000   116.6000
+angle    C3   C3   SX     0.4200   106.0000
+angle    H1   C3   SX     0.3840   108.6000
+angle    C3   SX   C3     0.7200    93.0000
+angle    C3   SX   O2     0.5970   106.0000
+angle    C3   C3   SX     0.7400   110.1000
+angle    C3   C3   SX     0.7400   109.5000
+angle    C3   C3   SX     0.7400   108.0000
+angle    H1   C3   SX     0.7400   108.0000
+angle    H1   C3   SX     0.7400   110.8000
+angle    C3   SX   C3     0.8400    95.9000
+angle    C2   C3   SX     0.4200   107.8000
+angle    C2   C3   SX     0.4200   109.5000
+angle    C2   C3   SX     0.4200   107.8000
+angle    C3   SX   SX     1.0000   102.0000
+angle    SX   C3   SX     0.4200   110.0000
+angle    C3   C3   PX     0.4800   111.5000
+angle    C2   C2   PX     0.3800   120.0000
+angle    H1   C3   PX     0.3600   109.6000
+angle    C3   O3   PX     0.7700   116.0000
+angle    C2   O3   PX     0.8000   118.0000
+angle    C3   PX   C3     0.5760    95.6000
+angle    C2   PX   C3     0.4800    92.5000
+angle    C2   PX   C2     0.4800    95.0000
+angle    C3   PX   H1     0.4800    95.0000
+angle    H1   PX   H1     0.4380    92.0000
+angle    O3   PX   O3     0.4500    99.5000
+angle    C3   C3   F0     0.7600   109.5000
+angle    F0   C3   H1     0.5700   109.5000
+angle    C3   C2   F0     0.4500   120.0000
+angle    F0   C2   H1     0.4500   120.0000
+angle    C2   C3   F0     0.6500   109.2000
+angle    C2   C3   F0     0.6500   109.0000
+angle    C2   C2   F0     0.6500   121.0000
+angle    F0   C3   F0     0.7500   109.1000
+angle    C3   C3   Cl     0.6500   108.2000
+angle    Cl   C3   H1     0.6000   107.5000
+angle    C3   C2   Cl     0.4500   112.6000
+angle    Cl   C2   H1     0.4500   112.6000
+angle    C2   C3   Cl     0.5600   109.8000
+angle    C2   C3   Cl     0.5600   109.5000
+angle    C2   C2   Cl     0.5500   118.8000
+angle    Cl   C3   O3     0.5600   108.5000
+angle    Cl   C3   F0     0.7500   110.4000
+angle    Cl   C3   Cl     0.7600   111.7000
+angle    Br   C3   C3     0.7400   108.2000
+angle    Br   C3   H1     0.5100   106.5000
+angle    Br   C3   C2     0.6300   109.1000
+angle    Br   C2   C3     0.4600   120.0000
+angle    Br   C2   H1     0.4600   112.1000
+angle    Br   C2   C2     0.4500   118.1000
+angle    Br   C3   F0     0.7200   109.4000
+angle    Br   C3   Cl     0.7200   110.7000
+angle    Br   C3   Br     0.6900   109.7000
+angle    C3   C3   I0     0.5700   108.9000
+angle    C2   C3   I0     0.4900   108.9000
+angle    H1   C3   I0     0.6300   106.4000
+angle    C3   C2   I0     0.4000   120.0000
+angle    H1   C2   I0     0.4000   112.0000
+angle    C3   C3   Si     0.4000   111.5000
+angle    C3   C3   Si     0.4000   112.7000
+angle    C3   C3   Si     0.4000   109.0000
+angle    H1   C3   Si     0.5400   108.9000
+angle    H1   C3   Si     0.5400   110.0000
+angle    H1   C3   Si     0.5400   109.5000
+angle    C3   C2   Si     0.4000   120.0000
+angle    H1   C2   Si     0.5250   119.5000
+angle    C2   C3   Si     0.5000   109.5000
+angle    C2   C3   Si     0.5000   105.0000
+angle    C2   C3   Si     0.5000   109.5000
+angle    C2   C2   Si     0.3200   122.0000
+angle    C3   O3   Si     0.4000   114.6000
+angle    Si   O3   Si     0.1500   145.7000
+angle    Si   C3   Si     0.3500   117.0000
+angle    Si   C3   Si     0.3500   119.5000
+angle    Si   C3   Si     0.3500   109.5000
+angle    Si   C2   Si     0.4000   120.0000
+angle    C3   Si   C3     0.4800   109.2000
+angle    C3   Si   C3     0.4800   110.4000
+angle    C3   Si   C3     0.4800   109.5000
+angle    C3   Si   H1     0.4000   111.0000
+angle    C3   Si   H1     0.4000   107.0000
+angle    C3   Si   H1     0.4000   109.3000
+angle    H1   Si   H1     0.4600   109.5000
+angle    H1   Si   H1     0.4600   108.7000
+angle    H1   Si   H1     0.4600   106.5000
+angle    C2   Si   C3     0.4000   110.2000
+angle    C2   Si   H1     0.5500   109.5000
+angle    C2   Si   C2     0.6000   104.5000
+angle    C3   Si   O3     0.3500   108.5000
+angle    H1   Si   O3     0.3500   109.5000
+angle    O3   Si   O3     0.4500   113.5000
+angle    C3   Si   Si     0.4500   109.0000
+angle    H1   Si   Si     0.4200   109.4000
+angle    C2   Si   Si     0.4000   110.2000
+angle    Si   Si   Si     0.2500   111.2000
+angle    Si   Si   Si     0.2500   110.8000
+angle    Si   Si   Si     0.2500   118.0000
+angle    00   C3   00     0.6000   110.0000
+angle    00   C2   00     0.5000   120.0000
+angle    00   C1   00     0.3000   180.0000
+angle    00   CR   00     0.4000   120.0000
+angle    00   CP   00     2.0000   120.0000
+angle    00   O2   00     0.3000   120.0000
+angle    00   O3   00     0.7000   106.0000
+angle    00   N2   00     0.7000   120.0000
+angle    00   N3   00     0.7000   108.0000
+angle    00   N4   00     0.7000   120.0000
+angle    00   N5   00     0.7000   110.0000
+angle    00   SX   00     0.9000    96.0000
+angle    00   PX   00     0.6000   110.0000
+angle    00   PX   00     0.6000   100.0000
+angle    00   Si   00     0.5500   109.5000
+angle    00   Z0   00     0.6000   109.5000
+angle    00   Cl   00     0.5000   109.5000
+angle    00   Br   00     0.4000   109.5000
+angle    00   I0   00     0.3000   109.5000
+angle    HX   RH   PX     0.7558    85.4339
+angle    HX   RH   PX     0.4871    84.3121
+angle    HX   RH   HX     0.0000    84.8617
+angle    C2   RH   HX     0.2779   168.5483
+angle    C2   RH   HX     1.2412    93.0980
+angle    HX   RH   PX     0.0000   168.7540
+angle    HX   RH   PX     0.0000    89.4721
+angle    C2   RH   PX     0.1934   108.8086
+angle    C2   RH   PX     1.2435   113.9045
+angle    C2   RH   PX     0.6365    90.4351
+angle    C2   RH   PX     0.1161   169.9754
+angle    C2   RH   HX     0.8171    85.5483
+angle    C2   RH   HX     0.9907    92.2411
+angle    C2   RH   C2     0.0009    71.8505
+angle    C2   HX   RH     2.3427    91.6755
+angle    00   C2   HX     0.1214    94.2706
+angle    C2   C2   HX     0.0000   113.3287
+angle    C0   C2   RH     0.0185   165.0487
+angle    C2   C2   RH     2.4856   111.9420
+angle    C2   C2   RH     5.7670    70.9553
+angle    RH   C2   RH     0.9413   105.8079
+angle    N2   C2   RH     1.0594   115.5720
+angle    PX   RH   PX     4.7580    86.0062
+vdw      C1     1.9400     0.0560     0.0000
+vdw      C2     1.9229     0.0000     0.0000
+vdw      C2     1.9600     0.0560     0.0000
+vdw      C3     2.1148     0.0117     0.0000
+vdw      CP     1.9400     0.0560     0.0000
+vdw      CR     1.9600     0.0560     0.0000
+vdw      O2     1.8883     0.0606     0.0000
+vdw      O3     1.9249     0.0596     0.0000
+vdw      OM     1.8200     0.0590     0.0000
+vdw      OP     1.8200     0.0590     0.0000
+vdw      OQ     1.8200     0.0590     0.0000
+vdw      H1     1.6873     0.0000     0.0000
+vdw      H1     1.6200     0.0200    -0.0770
+vdw      H2     1.6000     0.0160     0.0000
+vdw      H3     1.6000     0.0150     0.0000
+vdw      H3     1.6000     0.0180     0.0000
+vdw      H4     1.6000     0.0340     0.0000
+vdw      N1     1.9300     0.0430     0.0000
+vdw      N2     1.9436     0.0435     0.0000
+vdw      N3     1.9300     0.0430     0.0000
+vdw      N4     1.9300     0.0430     0.0000
+vdw      N5     1.9300     0.0430     0.0000
+vdw      B2     2.1500     0.0140     0.0000
+vdw      B3     2.1500     0.0140     0.0000
+vdw      SX     2.1500     0.2020     0.0000
+vdw      PX     2.3155     0.1623     0.0000
+vdw      F0     1.7100     0.0750     0.0000
+vdw      Cl     2.0700     0.2400     0.0000
+vdw      Br     2.2200     0.3200     0.0000
+vdw      I0     2.3600     0.4240     0.0000
+vdw      Si     2.2900     0.1400     0.0000
+vdw      Z0     2.0000     0.6300     0.0000
+vdw      RH     2.6631     0.1371     0.0000
+vdw      H5     1.6200     0.0200    -0.0770
+vdw      H6     1.6200     0.0200    -0.0770
+vdw      H7     1.6200     0.0200    -0.0770
