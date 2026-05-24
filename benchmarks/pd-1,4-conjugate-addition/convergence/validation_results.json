@@ -1,0 +1,57 @@
+{
+  "provenance": {
+    "generator": "scripts/regenerate_convergence_results.py",
+    "timestamp_utc": "2026-05-24T19:48:10.089779+00:00",
+    "command_line": "scripts/regenerate_convergence_results.py --skip-optimization --output-dir /tmp/regen-test --combined-output /tmp/regen-test/baseline_all.json",
+    "q2mm": {
+      "git_sha": "4bbd875ef4d5ee384693e384ce7fd776f773affd",
+      "git_dirty": true
+    },
+    "q2mm_data": {},
+    "ratio_tol": 0.15,
+    "maxiter": 500,
+    "skip_optimization": true,
+    "devices": {
+      "jax_devices": [
+        "cuda:0"
+      ],
+      "openmm_platforms": [
+        "Reference",
+        "CPU",
+        "CUDA"
+      ]
+    }
+  },
+  "result": {
+    "system": "pd-conjugate",
+    "n_molecules": 10,
+    "n_active_params": 340,
+    "initial_obj_score": 8210877.2065551225,
+    "initial_jaxloss": 9875845.709910054,
+    "ratio": 1.2027759594341163,
+    "ratio_status": "out_of_band",
+    "ratio_passes": false,
+    "seminario": {
+      "bond_length": {
+        "n_refs": 473,
+        "r2": 0.43546436769356744,
+        "rmsd": 0.253070781273362,
+        "mae": 0.1227489512994268
+      },
+      "bond_angle": {
+        "n_refs": 892,
+        "r2": -0.11838575572743437,
+        "rmsd": 19.29279904790927,
+        "mae": 10.23972596342308
+      },
+      "eig_diagonal": {
+        "n_refs": 1286,
+        "r2": -4.46646935937169,
+        "rmsd": 0.29518118985533687,
+        "mae": 0.23052543293166813
+      }
+    },
+    "skipped": true,
+    "skip_reason": "user_requested"
+  }
+}
