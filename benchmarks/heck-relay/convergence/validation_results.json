@@ -1,13 +1,16 @@
 {
   "provenance": {
     "generator": "scripts/regenerate_convergence_results.py",
-    "timestamp_utc": "2026-05-24T19:48:10.089779+00:00",
-    "command_line": "scripts/regenerate_convergence_results.py --skip-optimization --output-dir /tmp/regen-test --combined-output /tmp/regen-test/baseline_all.json",
+    "timestamp_utc": "2026-05-24T21:36:48.293462+00:00",
+    "command_line": "scripts/regenerate_convergence_results.py --system heck-relay --skip-optimization --output-dir /home/eric/repos/q2mm-data/benchmarks",
     "q2mm": {
-      "git_sha": "4bbd875ef4d5ee384693e384ce7fd776f773affd",
+      "git_sha": "3c1ad07b38f29b8f4583961fccc910deeff5b0c8",
       "git_dirty": true
     },
-    "q2mm_data": {},
+    "q2mm_data": {
+      "git_sha": "c863a2dab0e77b499fe6a1d6bbca6afa19e4289e",
+      "git_dirty": false
+    },
     "ratio_tol": 0.15,
     "maxiter": 500,
     "skip_optimization": true,
@@ -26,27 +29,27 @@
     "system": "heck-relay",
     "n_molecules": 23,
     "n_active_params": 462,
-    "initial_obj_score": 147565512.05987787,
-    "initial_jaxloss": 1e+30,
-    "ratio": 6.776651170323785e+21,
+    "initial_obj_score": 122558618.23044571,
+    "initial_jaxloss": 5.644986536037696e+89,
+    "ratio": 4.60594825361321e+81,
     "ratio_status": "out_of_band",
     "ratio_passes": false,
     "seminario": {
       "bond_length": {
         "n_refs": 1140,
-        "r2": -48.06125310400279,
-        "rmsd": 2.2870531608934663,
-        "mae": 1.1256006940356185
+        "r2": -315.0821054996008,
+        "rmsd": 5.805062448963287,
+        "mae": 2.3458559129357175
       },
       "bond_angle": {
         "n_refs": 2157,
-        "r2": -5.47366252225975,
-        "rmsd": 43.737116590578914,
-        "mae": 31.925956818885787
+        "r2": -5.963884226282713,
+        "rmsd": 45.3629084712454,
+        "mae": 31.970886278436126
       },
       "eig_diagonal": {
         "n_refs": 3121,
-        "r2": -4.662423095633234,
+        "r2": -4.662423095633232,
         "rmsd": 0.3077977189206162,
         "mae": 0.2343079974796941
       }
