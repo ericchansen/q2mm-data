@@ -1,15 +1,15 @@
 {
   "provenance": {
     "generator": "scripts/regenerate_convergence_results.py",
-    "timestamp_utc": "2026-05-25T04:56:22.516785+00:00",
-    "command_line": "scripts/regenerate_convergence_results.py --system heck-relay --skip-optimization --output-dir /home/eric/repos/q2mm-data/benchmarks",
+    "timestamp_utc": "2026-05-25T14:55:17.583903+00:00",
+    "command_line": "scripts/regenerate_convergence_results.py --skip-optimization --output-dir /home/eric/repos/q2mm-data/benchmarks --combined-output /tmp/regen-all-baseline.json",
     "q2mm": {
-      "git_sha": "40b5d20001b06c406f67cce3e5ec8acf89f1f199",
-      "git_dirty": true
+      "git_sha": "1efff97bb11fd6c2c4b7db8a0841ee05384a1151",
+      "git_dirty": false
     },
     "q2mm_data": {
-      "git_sha": "370b9af74177936cbfc2fc991caf6deb2b4dbe36",
-      "git_dirty": true
+      "git_sha": "a7465fb2536997f53d1e5a4e9712693677572bcb",
+      "git_dirty": false
     },
     "ratio_tol": 0.15,
     "maxiter": 500,
@@ -29,23 +29,23 @@
     "system": "heck-relay",
     "n_molecules": 23,
     "n_active_params": 462,
-    "initial_obj_score": 3463632.4167105975,
-    "initial_jaxloss": 4482237.908947647,
-    "ratio": 1.294085910306965,
+    "initial_obj_score": 3400409.485135087,
+    "initial_jaxloss": 4434648.082002647,
+    "ratio": 1.3041511916105226,
     "ratio_status": "out_of_band",
     "ratio_passes": false,
     "seminario": {
       "bond_length": {
         "n_refs": 1140,
-        "r2": 0.9803465708351022,
-        "rmsd": 0.045774763608272526,
-        "mae": 0.026612368550847518
+        "r2": 0.980202686045426,
+        "rmsd": 0.045942018934896287,
+        "mae": 0.026538756059945573
       },
       "bond_angle": {
         "n_refs": 2157,
-        "r2": 0.7858138681216401,
-        "rmsd": 7.9555607143756735,
-        "mae": 5.162549662239156
+        "r2": 0.7814147122931702,
+        "rmsd": 8.036844850106263,
+        "mae": 5.226622810339419
       },
       "eig_diagonal": {
         "n_refs": 3121,

@@ -1,19 +1,19 @@
 {
   "provenance": {
     "generator": "scripts/regenerate_convergence_results.py",
-    "timestamp_utc": "2026-05-25T00:38:52.899356+00:00",
-    "command_line": "scripts/regenerate_convergence_results.py --system rh-enamide --system pd-allyl --output-dir /home/eric/repos/q2mm-data/benchmarks",
+    "timestamp_utc": "2026-05-25T14:55:17.583903+00:00",
+    "command_line": "scripts/regenerate_convergence_results.py --skip-optimization --output-dir /home/eric/repos/q2mm-data/benchmarks --combined-output /tmp/regen-all-baseline.json",
     "q2mm": {
-      "git_sha": "97a6c3e3e2820074d101419fdc1eb8b9b62e833c",
+      "git_sha": "1efff97bb11fd6c2c4b7db8a0841ee05384a1151",
       "git_dirty": false
     },
     "q2mm_data": {
-      "git_sha": "091b93d41bf50a7c55d86bf8c85e299e6c7d34ac",
+      "git_sha": "a7465fb2536997f53d1e5a4e9712693677572bcb",
       "git_dirty": false
     },
     "ratio_tol": 0.15,
     "maxiter": 500,
-    "skip_optimization": false,
+    "skip_optimization": true,
     "devices": {
       "jax_devices": [
         "cuda:0"
@@ -29,45 +29,23 @@
     "seminario": {
       "bond_length": {
         "n_refs": 849,
-        "r2": 0.027062875898558048,
-        "rmsd": 0.37369627093487295,
-        "mae": 0.09252189499561089
+        "r2": 0.04216852817895356,
+        "rmsd": 0.3707839510741326,
+        "mae": 0.07593589543145443
       },
       "bond_angle": {
         "n_refs": 1582,
-        "r2": 0.3365064445812148,
-        "rmsd": 14.20568099611217,
-        "mae": 7.305407103192835
+        "r2": 0.33041108778663597,
+        "rmsd": 14.270783915594839,
+        "mae": 7.417902345500053
       },
       "eig_diagonal": {
         "n_refs": 2412,
-        "r2": -1.405494317890696,
-        "rmsd": 0.22128691931589958,
-        "mae": 0.1830234426499537
+        "r2": -2.821598234563398,
+        "rmsd": 0.2789177087187873,
+        "mae": 0.2308295603556338
       },
-      "_objective_score": 8018305.833561603,
-      "_total_refs": 4843
-    },
-    "optimized": {
-      "bond_length": {
-        "n_refs": 849,
-        "r2": 0.022180360502920715,
-        "rmsd": 0.3746327623048161,
-        "mae": 0.09254710137247678
-      },
-      "bond_angle": {
-        "n_refs": 1582,
-        "r2": 0.33524662525599724,
-        "rmsd": 14.219161235667233,
-        "mae": 7.314274947359119
-      },
-      "eig_diagonal": {
-        "n_refs": 2412,
-        "r2": -1.405494317890696,
-        "rmsd": 0.2212869193158996,
-        "mae": 0.1830234426499537
-      },
-      "_objective_score": 7999773.979285052,
+      "_objective_score": 7991868.06800802,
       "_total_refs": 4843
     }
   }

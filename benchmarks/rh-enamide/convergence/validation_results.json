@@ -1,19 +1,19 @@
 {
   "provenance": {
     "generator": "scripts/regenerate_convergence_results.py",
-    "timestamp_utc": "2026-05-25T00:38:52.899356+00:00",
-    "command_line": "scripts/regenerate_convergence_results.py --system rh-enamide --system pd-allyl --output-dir /home/eric/repos/q2mm-data/benchmarks",
+    "timestamp_utc": "2026-05-25T14:55:17.583903+00:00",
+    "command_line": "scripts/regenerate_convergence_results.py --skip-optimization --output-dir /home/eric/repos/q2mm-data/benchmarks --combined-output /tmp/regen-all-baseline.json",
     "q2mm": {
-      "git_sha": "97a6c3e3e2820074d101419fdc1eb8b9b62e833c",
+      "git_sha": "1efff97bb11fd6c2c4b7db8a0841ee05384a1151",
       "git_dirty": false
     },
     "q2mm_data": {
-      "git_sha": "091b93d41bf50a7c55d86bf8c85e299e6c7d34ac",
+      "git_sha": "a7465fb2536997f53d1e5a4e9712693677572bcb",
       "git_dirty": false
     },
     "ratio_tol": 0.15,
     "maxiter": 500,
-    "skip_optimization": false,
+    "skip_optimization": true,
     "devices": {
       "jax_devices": [
         "cuda:0"
@@ -29,58 +29,32 @@
     "system": "rh-enamide",
     "n_molecules": 9,
     "n_active_params": 182,
-    "initial_obj_score": 392181.68224611995,
-    "initial_jaxloss": 410674.6362366647,
-    "ratio": 1.0471540483090163,
+    "initial_obj_score": 486666.14300285757,
+    "initial_jaxloss": 519758.48704050225,
+    "ratio": 1.067998040367995,
     "ratio_status": "ok",
     "ratio_passes": true,
     "seminario": {
       "bond_length": {
         "n_refs": 500,
-        "r2": 0.9760182200079239,
-        "rmsd": 0.05758072565276443,
-        "mae": 0.03053801369513637
+        "r2": 0.9865585399767884,
+        "rmsd": 0.04310817615268298,
+        "mae": 0.02513194079668853
       },
       "bond_angle": {
         "n_refs": 1050,
-        "r2": 0.9337401122873601,
-        "rmsd": 3.86655181840731,
-        "mae": 2.98838657626779
+        "r2": 0.9176451357010937,
+        "rmsd": 4.310653503197213,
+        "mae": 3.0853917452203605
       },
       "eig_diagonal": {
         "n_refs": 1395,
-        "r2": 0.9716936291492432,
-        "rmsd": 0.0638740379103938,
-        "mae": 0.030469715682501872
+        "r2": 0.9626721982611005,
+        "rmsd": 0.07334972382795416,
+        "mae": 0.03795068177034179
       }
     },
-    "final_obj_score": 279984.12083582144,
-    "improvement_pct": 28.68434379645185,
-    "n_iterations": 6,
-    "n_evaluations": 2,
-    "converged": true,
-    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
-    "jac_mode": "jax_loss",
-    "opt_time_s": 655.5634594229923,
-    "optimized": {
-      "bond_length": {
-        "n_refs": 500,
-        "r2": 0.9831787505698847,
-        "rmsd": 0.04822425774606213,
-        "mae": 0.030469337162689725
-      },
-      "bond_angle": {
-        "n_refs": 1050,
-        "r2": 0.9526886041354717,
-        "rmsd": 3.2672424859373237,
-        "mae": 2.5593521505786785
-      },
-      "eig_diagonal": {
-        "n_refs": 1395,
-        "r2": 0.9696049798095662,
-        "rmsd": 0.06618864550753673,
-        "mae": 0.032900304335504865
-      }
-    }
+    "skipped": true,
+    "skip_reason": "user_requested"
   }
 }
