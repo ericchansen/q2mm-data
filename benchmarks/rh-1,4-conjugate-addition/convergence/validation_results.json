@@ -1,13 +1,16 @@
 {
   "provenance": {
     "generator": "scripts/regenerate_convergence_results.py",
-    "timestamp_utc": "2026-05-24T19:48:10.089779+00:00",
-    "command_line": "scripts/regenerate_convergence_results.py --skip-optimization --output-dir /tmp/regen-test --combined-output /tmp/regen-test/baseline_all.json",
+    "timestamp_utc": "2026-05-25T14:55:17.583903+00:00",
+    "command_line": "scripts/regenerate_convergence_results.py --skip-optimization --output-dir /home/eric/repos/q2mm-data/benchmarks --combined-output /tmp/regen-all-baseline.json",
     "q2mm": {
-      "git_sha": "4bbd875ef4d5ee384693e384ce7fd776f773affd",
-      "git_dirty": true
+      "git_sha": "1efff97bb11fd6c2c4b7db8a0841ee05384a1151",
+      "git_dirty": false
     },
-    "q2mm_data": {},
+    "q2mm_data": {
+      "git_sha": "a7465fb2536997f53d1e5a4e9712693677572bcb",
+      "git_dirty": false
+    },
     "ratio_tol": 0.15,
     "maxiter": 500,
     "skip_optimization": true,
@@ -26,29 +29,29 @@
     "system": "rh-conjugate",
     "n_molecules": 10,
     "n_active_params": 488,
-    "initial_obj_score": 22131611.936934754,
-    "initial_jaxloss": 101852507294.57765,
-    "ratio": 4602.127833472409,
-    "ratio_status": "out_of_band",
-    "ratio_passes": false,
+    "initial_obj_score": 6417335.133298012,
+    "initial_jaxloss": 6648979.806882811,
+    "ratio": 1.0360967081776438,
+    "ratio_status": "ok",
+    "ratio_passes": true,
     "seminario": {
       "bond_length": {
         "n_refs": 457,
-        "r2": -57.65003360692797,
-        "rmsd": 2.9954779787880015,
-        "mae": 1.2056620949556383
+        "r2": 0.890698431213995,
+        "rmsd": 0.1293138959449199,
+        "mae": 0.055768998121867266
       },
       "bond_angle": {
         "n_refs": 926,
-        "r2": -1.2936774705354463,
-        "rmsd": 33.9418292181713,
-        "mae": 20.032588767695085
+        "r2": 0.4537506736106529,
+        "rmsd": 16.56397348980547,
+        "mae": 10.98007676951069
       },
       "eig_diagonal": {
         "n_refs": 1244,
-        "r2": -4.847164978041488,
-        "rmsd": 0.3013975217528621,
-        "mae": 0.21955384382859647
+        "r2": -7.862431939033796,
+        "rmsd": 0.37105941850237495,
+        "mae": 0.27255770882038477
       }
     },
     "skipped": true,
