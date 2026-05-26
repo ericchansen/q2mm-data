@@ -1,19 +1,19 @@
 {
   "provenance": {
     "generator": "scripts/regenerate_convergence_results.py",
-    "timestamp_utc": "2026-05-25T14:55:17.583903+00:00",
-    "command_line": "scripts/regenerate_convergence_results.py --skip-optimization --output-dir /home/eric/repos/q2mm-data/benchmarks --combined-output /tmp/regen-all-baseline.json",
+    "timestamp_utc": "2026-05-26T20:04:20.101990+00:00",
+    "command_line": "scripts/regenerate_convergence_results.py --system pd-conjugate --ratio-tol none --output-dir /home/eric/repos/q2mm-data/benchmarks --log-level INFO",
     "q2mm": {
-      "git_sha": "1efff97bb11fd6c2c4b7db8a0841ee05384a1151",
+      "git_sha": "8c7f898f0ea3a3de4db3ecc55f95c95942c8f396",
       "git_dirty": false
     },
     "q2mm_data": {
-      "git_sha": "a7465fb2536997f53d1e5a4e9712693677572bcb",
+      "git_sha": "65faf9591f54d86de83792f9ca6d98e04e460162",
       "git_dirty": false
     },
-    "ratio_tol": 0.15,
+    "ratio_tol": null,
     "maxiter": 500,
-    "skip_optimization": true,
+    "skip_optimization": false,
     "devices": {
       "jax_devices": [
         "cuda:0"
@@ -29,23 +29,23 @@
     "system": "pd-conjugate",
     "n_molecules": 10,
     "n_active_params": 340,
-    "initial_obj_score": 8785242.59681151,
-    "initial_jaxloss": 8466227.77106973,
-    "ratio": 0.9636874198718698,
-    "ratio_status": "ok",
+    "initial_obj_score": 8608266.09855352,
+    "initial_jaxloss": 8477316.947016843,
+    "ratio": 0.9847879758783618,
+    "ratio_status": "ok_bypassed",
     "ratio_passes": true,
     "seminario": {
       "bond_length": {
         "n_refs": 473,
-        "r2": 0.9391496848119862,
-        "rmsd": 0.08308597917653962,
-        "mae": 0.04094344050272175
+        "r2": 0.9393358623032324,
+        "rmsd": 0.08295877696502742,
+        "mae": 0.04071429959369658
       },
       "bond_angle": {
         "n_refs": 892,
-        "r2": -0.1771624273326735,
-        "rmsd": 19.79327338297876,
-        "mae": 13.393525927763426
+        "r2": -0.18164307970855154,
+        "rmsd": 19.830907333530153,
+        "mae": 13.418560577119468
       },
       "eig_diagonal": {
         "n_refs": 1286,
@@ -54,7 +54,33 @@
         "mae": 0.3169591090864787
       }
     },
-    "skipped": true,
-    "skip_reason": "user_requested"
+    "final_obj_score": 7234668.170990493,
+    "improvement_pct": 16.094655895687083,
+    "n_iterations": 3,
+    "n_evaluations": 2,
+    "converged": true,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "jac_mode": "jax_loss",
+    "opt_time_s": 700.6252320160274,
+    "optimized": {
+      "bond_length": {
+        "n_refs": 473,
+        "r2": 0.9495337616389211,
+        "rmsd": 0.0756653061635744,
+        "mae": 0.03652130334525273
+      },
+      "bond_angle": {
+        "n_refs": 892,
+        "r2": 0.036855328205749105,
+        "rmsd": 17.90379887220472,
+        "mae": 11.535847229580737
+      },
+      "eig_diagonal": {
+        "n_refs": 1286,
+        "r2": -9.642360241955561,
+        "rmsd": 0.4118643459048713,
+        "mae": 0.3185171034699505
+      }
+    }
   }
 }
