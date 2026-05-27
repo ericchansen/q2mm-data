@@ -71,7 +71,8 @@ For this repo specifically:
   (documentation, paper figure, regression test) belong here.
 
 Run `scripts/audit-orphans.sh` (see below) periodically to catch any
-directories that have lost their references.
+directories that have lost their references.  The same audit now runs
+automatically on every pull request and weekly on Mondays.
 
 ## Auditing for orphaned data
 
@@ -79,6 +80,10 @@ directories that have lost their references.
 # from the q2mm-data repo root, point at a checkout of ericchansen/q2mm:
 scripts/audit-orphans.sh ../q2mm
 ```
+
+The audit also runs automatically in
+[Audit orphaned benchmark data](.github/workflows/audit-orphans.yml) on every
+pull request, weekly on Mondays at 09:00 UTC, and on manual dispatch.
 
 The script walks every `benchmarks/<system>/<subdir>/` and searches the
 q2mm checkout (`docs/`, `test/`, `q2mm/`, `scripts/`, `examples/`) for
