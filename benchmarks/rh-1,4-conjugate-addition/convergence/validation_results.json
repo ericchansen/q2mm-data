@@ -1,19 +1,19 @@
 {
   "provenance": {
     "generator": "scripts/regenerate_convergence_results.py",
-    "timestamp_utc": "2026-05-25T14:55:17.583903+00:00",
-    "command_line": "scripts/regenerate_convergence_results.py --skip-optimization --output-dir /home/eric/repos/q2mm-data/benchmarks --combined-output /tmp/regen-all-baseline.json",
+    "timestamp_utc": "2026-05-26T23:49:03.708249+00:00",
+    "command_line": "scripts/regenerate_convergence_results.py --system rh-conjugate --output-dir /home/eric/repos/q2mm-data/benchmarks --log-level INFO",
     "q2mm": {
-      "git_sha": "1efff97bb11fd6c2c4b7db8a0841ee05384a1151",
+      "git_sha": "85dc8c98957b7aee8ee29116da24a36c88817447",
       "git_dirty": false
     },
     "q2mm_data": {
-      "git_sha": "a7465fb2536997f53d1e5a4e9712693677572bcb",
-      "git_dirty": false
+      "git_sha": "8b0fcb7942146e7fdecd756852657f7dad98013b",
+      "git_dirty": true
     },
     "ratio_tol": 0.15,
     "maxiter": 500,
-    "skip_optimization": true,
+    "skip_optimization": false,
     "devices": {
       "jax_devices": [
         "cuda:0"
@@ -29,23 +29,51 @@
     "system": "rh-conjugate",
     "n_molecules": 10,
     "n_active_params": 488,
-    "initial_obj_score": 6417335.133298012,
-    "initial_jaxloss": 6648979.806882811,
-    "ratio": 1.0360967081776438,
+    "initial_obj_score": 6475860.312773374,
+    "initial_jaxloss": 6575276.17848163,
+    "ratio": 1.0153517619137278,
     "ratio_status": "ok",
     "ratio_passes": true,
     "seminario": {
       "bond_length": {
         "n_refs": 457,
-        "r2": 0.890698431213995,
-        "rmsd": 0.1293138959449199,
-        "mae": 0.055768998121867266
+        "r2": 0.8905137634867293,
+        "rmsd": 0.1294230893697596,
+        "mae": 0.05517176023850395
       },
       "bond_angle": {
         "n_refs": 926,
-        "r2": 0.4537506736106529,
-        "rmsd": 16.56397348980547,
-        "mae": 10.98007676951069
+        "r2": 0.4561662490367857,
+        "rmsd": 16.52730904252892,
+        "mae": 10.949012379512544
+      },
+      "eig_diagonal": {
+        "n_refs": 1244,
+        "r2": -7.862431939033796,
+        "rmsd": 0.37105941850237495,
+        "mae": 0.2725577088203847
+      }
+    },
+    "final_obj_score": 6384510.201354226,
+    "improvement_pct": 0.0,
+    "n_iterations": 2,
+    "n_evaluations": 2,
+    "converged": true,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "jac_mode": "jax_loss",
+    "opt_time_s": 623.5435450949881,
+    "optimized": {
+      "bond_length": {
+        "n_refs": 457,
+        "r2": 0.8883354248575497,
+        "rmsd": 0.13070424943293668,
+        "mae": 0.05532148041526235
+      },
+      "bond_angle": {
+        "n_refs": 926,
+        "r2": 0.442739178322207,
+        "rmsd": 16.730091839905224,
+        "mae": 11.054143042578117
       },
       "eig_diagonal": {
         "n_refs": 1244,
@@ -53,8 +81,6 @@
         "rmsd": 0.37105941850237495,
         "mae": 0.27255770882038477
       }
-    },
-    "skipped": true,
-    "skip_reason": "user_requested"
+    }
   }
 }
