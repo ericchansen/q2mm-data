@@ -1,0 +1,22 @@
+name: Audit orphaned benchmark data
+
+on:
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: "0 9 * * 1"
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: ericchansen/q2mm
+          ref: master
+          path: q2mm-sibling
+      - run: bash scripts/audit-orphans.sh "${GITHUB_WORKSPACE}/q2mm-sibling"
