@@ -1,19 +1,19 @@
 {
   "provenance": {
     "generator": "scripts/regenerate_convergence_results.py",
-    "timestamp_utc": "2026-05-25T14:55:17.583903+00:00",
-    "command_line": "scripts/regenerate_convergence_results.py --skip-optimization --output-dir /home/eric/repos/q2mm-data/benchmarks --combined-output /tmp/regen-all-baseline.json",
+    "timestamp_utc": "2026-05-26T23:07:38.491122+00:00",
+    "command_line": "scripts/regenerate_convergence_results.py --system pd-allyl --output-dir /home/eric/repos/q2mm-data/benchmarks --log-level INFO",
     "q2mm": {
-      "git_sha": "1efff97bb11fd6c2c4b7db8a0841ee05384a1151",
+      "git_sha": "85dc8c98957b7aee8ee29116da24a36c88817447",
       "git_dirty": false
     },
     "q2mm_data": {
-      "git_sha": "a7465fb2536997f53d1e5a4e9712693677572bcb",
-      "git_dirty": false
+      "git_sha": "8b0fcb7942146e7fdecd756852657f7dad98013b",
+      "git_dirty": true
     },
     "ratio_tol": 0.15,
     "maxiter": 500,
-    "skip_optimization": true,
+    "skip_optimization": false,
     "devices": {
       "jax_devices": [
         "cuda:0"
@@ -29,23 +29,23 @@
     "system": "pd-allyl",
     "n_molecules": 21,
     "n_active_params": 482,
-    "initial_obj_score": 7991868.06800802,
-    "initial_jaxloss": 8769674.645244142,
-    "ratio": 1.0973247519375018,
+    "initial_obj_score": 8037783.981298011,
+    "initial_jaxloss": 8700609.332437864,
+    "ratio": 1.0824636930629248,
     "ratio_status": "ok",
     "ratio_passes": true,
     "seminario": {
       "bond_length": {
         "n_refs": 849,
-        "r2": 0.04216852817895356,
-        "rmsd": 0.3707839510741326,
-        "mae": 0.07593589543145443
+        "r2": 0.039573851091579404,
+        "rmsd": 0.3712858211814591,
+        "mae": 0.07600145009176092
       },
       "bond_angle": {
         "n_refs": 1582,
-        "r2": 0.33041108778663597,
-        "rmsd": 14.270783915594839,
-        "mae": 7.417902345500053
+        "r2": 0.3326753284565044,
+        "rmsd": 14.246634880636293,
+        "mae": 7.414124639527724
       },
       "eig_diagonal": {
         "n_refs": 2412,
@@ -54,7 +54,33 @@
         "mae": 0.2308295603556338
       }
     },
-    "skipped": true,
-    "skip_reason": "user_requested"
+    "final_obj_score": 8027500.575006098,
+    "improvement_pct": 0.008081254607350541,
+    "n_iterations": 1,
+    "n_evaluations": 2,
+    "converged": true,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "jac_mode": "jax_loss",
+    "opt_time_s": 1171.9789461890177,
+    "optimized": {
+      "bond_length": {
+        "n_refs": 849,
+        "r2": 0.04294535849937109,
+        "rmsd": 0.37063356207084147,
+        "mae": 0.0759025114089257
+      },
+      "bond_angle": {
+        "n_refs": 1582,
+        "r2": 0.33510052371233934,
+        "rmsd": 14.220723715340824,
+        "mae": 7.407597739259764
+      },
+      "eig_diagonal": {
+        "n_refs": 2412,
+        "r2": -2.8215982345633974,
+        "rmsd": 0.2789177087187873,
+        "mae": 0.2308295603556338
+      }
+    }
   }
 }

@@ -1,19 +1,19 @@
 {
   "provenance": {
     "generator": "scripts/regenerate_convergence_results.py",
-    "timestamp_utc": "2026-05-25T14:55:17.583903+00:00",
-    "command_line": "scripts/regenerate_convergence_results.py --skip-optimization --output-dir /home/eric/repos/q2mm-data/benchmarks --combined-output /tmp/regen-all-baseline.json",
+    "timestamp_utc": "2026-05-26T22:46:05.442842+00:00",
+    "command_line": "scripts/regenerate_convergence_results.py --system ch3f --output-dir /home/eric/repos/q2mm-data/benchmarks --log-level INFO",
     "q2mm": {
-      "git_sha": "1efff97bb11fd6c2c4b7db8a0841ee05384a1151",
+      "git_sha": "85dc8c98957b7aee8ee29116da24a36c88817447",
       "git_dirty": false
     },
     "q2mm_data": {
-      "git_sha": "a7465fb2536997f53d1e5a4e9712693677572bcb",
+      "git_sha": "8b0fcb7942146e7fdecd756852657f7dad98013b",
       "git_dirty": false
     },
     "ratio_tol": 0.15,
     "maxiter": 500,
-    "skip_optimization": true,
+    "skip_optimization": false,
     "devices": {
       "jax_devices": [
         "cuda:0"
@@ -29,11 +29,21 @@
     "seminario": {
       "frequency": {
         "n_refs": 9,
-        "r2": 0.9503878113616433,
-        "rmsd": 191.3684928169649,
-        "mae": 176.68442571266712
+        "r2": 0.9503878113616431,
+        "rmsd": 191.36849281696536,
+        "mae": 176.68442571266718
       },
-      "_objective_score": 0.32959710038733153,
+      "_objective_score": 0.3295971003873329,
+      "_total_refs": 9
+    },
+    "optimized": {
+      "frequency": {
+        "n_refs": 9,
+        "r2": 0.9999174594677313,
+        "rmsd": 7.8056644135184685,
+        "mae": 4.711071817934049
+      },
+      "_objective_score": 0.0005483555724282448,
       "_total_refs": 9
     }
   }
