@@ -1,16 +1,13 @@
 {
   "provenance": {
     "generator": "scripts/regenerate_convergence_results.py",
-    "timestamp_utc": "2026-05-27T21:29:27.518071+00:00",
-    "command_line": "scripts/regenerate_convergence_results.py --system pd-allyl --n-evals 10 --output-dir /home/eric/repos/q2mm-data/benchmarks --log-level INFO",
+    "timestamp_utc": "2026-05-28T04:11:21.462827+00:00",
+    "command_line": "scripts/regenerate_convergence_results.py --system pd-allyl --n-evals 10 --output-dir /tmp/q2mm-fix-test",
     "q2mm": {
-      "git_sha": "86d848397f69832fef39104c337704373d60c857",
-      "git_dirty": false
+      "git_sha": "855c0868992e000e7afeb12aa5f1e1f4fd58c94c",
+      "git_dirty": true
     },
-    "q2mm_data": {
-      "git_sha": "a3cc8d7d540b66a896fd1b439cebdf49ddc7bc5c",
-      "git_dirty": false
-    },
+    "q2mm_data": {},
     "ratio_tol": 0.15,
     "maxiter": 500,
     "n_evals": 10,
@@ -30,45 +27,45 @@
     "seminario": {
       "bond_length": {
         "n_refs": 849,
-        "r2": 0.04983830163335734,
-        "rmsd": 0.3692964530952702,
-        "mae": 0.07572917476439459
+        "r2": 0.048272880192938405,
+        "rmsd": 0.3696005416893957,
+        "mae": 0.07575635197182028
       },
       "bond_angle": {
         "n_refs": 1582,
-        "r2": 0.3330602144589909,
-        "rmsd": 14.24252584537124,
-        "mae": 7.405514460969586
+        "r2": 0.33123000166135297,
+        "rmsd": 14.262054590695268,
+        "mae": 7.412586516350705
       },
       "eig_diagonal": {
         "n_refs": 2412,
         "r2": -2.821598234563398,
         "rmsd": 0.2789177087187873,
-        "mae": 0.2308295603556338
+        "mae": 0.23082956035563382
       },
-      "_objective_score": 7993910.869743566,
+      "_objective_score": 8033002.817848861,
       "_total_refs": 4843
     },
     "optimized": {
       "bond_length": {
         "n_refs": 849,
-        "r2": 0.03741497820354778,
-        "rmsd": 0.3717028802952003,
-        "mae": 0.07606511874487426
+        "r2": 0.04611501082646263,
+        "rmsd": 0.3700193056958842,
+        "mae": 0.0758084749489473
       },
       "bond_angle": {
         "n_refs": 1582,
-        "r2": 0.3314876358645703,
-        "rmsd": 14.259307198449022,
-        "mae": 7.4150880050446135
+        "r2": 0.33109096777489055,
+        "rmsd": 14.263537018013439,
+        "mae": 7.411376064422191
       },
       "eig_diagonal": {
         "n_refs": 2412,
         "r2": -2.821598234563398,
         "rmsd": 0.2789177087187873,
-        "mae": 0.2308295603556338
+        "mae": 0.23082956035563382
       },
-      "_objective_score": 8036089.476796419,
+      "_objective_score": 7991274.352391193,
       "_total_refs": 4843
     }
   }

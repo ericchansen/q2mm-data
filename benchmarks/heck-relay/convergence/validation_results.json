@@ -1,16 +1,13 @@
 {
   "provenance": {
     "generator": "scripts/regenerate_convergence_results.py",
-    "timestamp_utc": "2026-05-27T23:11:26.865699+00:00",
-    "command_line": "scripts/regenerate_convergence_results.py --system heck-relay --n-evals 10 --ratio-tol none --output-dir /home/eric/repos/q2mm-data/benchmarks --log-level INFO",
+    "timestamp_utc": "2026-05-28T05:22:13.045666+00:00",
+    "command_line": "scripts/regenerate_convergence_results.py --system heck-relay --n-evals 10 --ratio-tol none --output-dir /tmp/q2mm-fix-test",
     "q2mm": {
-      "git_sha": "86d848397f69832fef39104c337704373d60c857",
-      "git_dirty": false
-    },
-    "q2mm_data": {
-      "git_sha": "a3cc8d7d540b66a896fd1b439cebdf49ddc7bc5c",
+      "git_sha": "855c0868992e000e7afeb12aa5f1e1f4fd58c94c",
       "git_dirty": true
     },
+    "q2mm_data": {},
     "ratio_tol": null,
     "maxiter": 500,
     "n_evals": 10,
@@ -30,66 +27,66 @@
     "system": "heck-relay",
     "n_molecules": 23,
     "n_active_params": 462,
-    "initial_obj_score": 3300583.661724017,
-    "initial_jaxloss": 4548931.428703255,
-    "ratio": 1.3782203073523,
+    "initial_obj_score": 3134582.5069351243,
+    "initial_jaxloss": 3402502.36069364,
+    "ratio": 1.0854722608723029,
     "ratio_status": "ok_bypassed",
     "ratio_passes": true,
     "seminario": {
       "bond_length": {
         "n_refs": 1140,
-        "r2": 0.9790319412096813,
-        "rmsd": 0.04728093475868026,
-        "mae": 0.027298790108083247
+        "r2": 0.981038111369397,
+        "rmsd": 0.044962219041832396,
+        "mae": 0.026791195009444716
       },
       "bond_angle": {
         "n_refs": 2157,
-        "r2": 0.7786596184395878,
-        "rmsd": 8.087335271830058,
-        "mae": 5.237661196985309
+        "r2": 0.8093155299739117,
+        "rmsd": 7.506418655976105,
+        "mae": 4.923241345978376
       },
       "eig_diagonal": {
         "n_refs": 3121,
-        "r2": -12.618267839869592,
-        "rmsd": 0.47733708251347695,
-        "mae": 0.34159681776745104
+        "r2": -12.61826783986958,
+        "rmsd": 0.47733708251347673,
+        "mae": 0.3415968177674508
       }
     },
-    "final_obj_score": 3528027.2417336227,
-    "initial_obj_score_mean": 3414927.262706998,
-    "initial_obj_score_ci95": 62886.31874069582,
-    "final_obj_score_mean": 3435217.287703148,
-    "final_obj_score_ci95": 48436.01552471613,
-    "improvement_pct_mean": -0.5941568717357182,
-    "improvement_significant": false,
-    "final_optimizer_score": 3526079.5216238024,
-    "initial_optimizer_score": 3551069.5806757547,
-    "n_iterations": 2,
+    "final_obj_score": 1453747.6150394878,
+    "initial_obj_score_mean": 3097708.570933946,
+    "initial_obj_score_ci95": 30715.15481001242,
+    "final_obj_score_mean": 1461406.2565446524,
+    "final_obj_score_ci95": 16931.661246669355,
+    "improvement_pct_mean": 52.822990830798375,
+    "improvement_significant": true,
+    "final_optimizer_score": 1459362.5431772685,
+    "initial_optimizer_score": 3131718.4086131174,
+    "n_iterations": 7,
     "n_evaluations": 2,
     "converged": true,
     "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
     "jac_mode": "jax_loss",
-    "opt_time_s": 1450.8179329050472,
-    "improvement_pct": -6.891010903532235,
-    "surrogate_improvement_pct": 0.7037332973688692,
+    "opt_time_s": 1825.4319417949882,
+    "improvement_pct": 53.62228903456406,
+    "surrogate_improvement_pct": 53.40058227573699,
     "optimized": {
       "bond_length": {
         "n_refs": 1140,
-        "r2": 0.9804737003948194,
-        "rmsd": 0.045626474810114774,
-        "mae": 0.026222195840961304
+        "r2": 0.9829738647681238,
+        "rmsd": 0.04260543271806141,
+        "mae": 0.03131348044650616
       },
       "bond_angle": {
         "n_refs": 2157,
-        "r2": 0.7872269222133916,
-        "rmsd": 7.929274604951425,
-        "mae": 5.143772463373742
+        "r2": 0.9088473814705358,
+        "rmsd": 5.189908428716197,
+        "mae": 3.8950710311777827
       },
       "eig_diagonal": {
         "n_refs": 3121,
-        "r2": -12.618267839869592,
-        "rmsd": 0.47733708251347695,
-        "mae": 0.3415968177674511
+        "r2": -14.279594658062587,
+        "rmsd": 0.5056152394338148,
+        "mae": 0.36250216811886293
       }
     }
   }
