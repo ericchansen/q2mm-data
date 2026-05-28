@@ -1,18 +1,19 @@
 {
   "provenance": {
     "generator": "scripts/regenerate_convergence_results.py",
-    "timestamp_utc": "2026-05-26T23:07:38.491122+00:00",
-    "command_line": "scripts/regenerate_convergence_results.py --system pd-allyl --output-dir /home/eric/repos/q2mm-data/benchmarks --log-level INFO",
+    "timestamp_utc": "2026-05-27T21:29:27.518071+00:00",
+    "command_line": "scripts/regenerate_convergence_results.py --system pd-allyl --n-evals 10 --output-dir /home/eric/repos/q2mm-data/benchmarks --log-level INFO",
     "q2mm": {
-      "git_sha": "85dc8c98957b7aee8ee29116da24a36c88817447",
+      "git_sha": "86d848397f69832fef39104c337704373d60c857",
       "git_dirty": false
     },
     "q2mm_data": {
-      "git_sha": "8b0fcb7942146e7fdecd756852657f7dad98013b",
-      "git_dirty": true
+      "git_sha": "a3cc8d7d540b66a896fd1b439cebdf49ddc7bc5c",
+      "git_dirty": false
     },
     "ratio_tol": 0.15,
     "maxiter": 500,
+    "n_evals": 10,
     "skip_optimization": false,
     "devices": {
       "jax_devices": [
@@ -29,15 +30,15 @@
     "seminario": {
       "bond_length": {
         "n_refs": 849,
-        "r2": 0.039573851091579404,
-        "rmsd": 0.3712858211814591,
-        "mae": 0.07600145009176092
+        "r2": 0.04983830163335734,
+        "rmsd": 0.3692964530952702,
+        "mae": 0.07572917476439459
       },
       "bond_angle": {
         "n_refs": 1582,
-        "r2": 0.3326753284565044,
-        "rmsd": 14.246634880636293,
-        "mae": 7.414124639527724
+        "r2": 0.3330602144589909,
+        "rmsd": 14.24252584537124,
+        "mae": 7.405514460969586
       },
       "eig_diagonal": {
         "n_refs": 2412,
@@ -45,29 +46,29 @@
         "rmsd": 0.2789177087187873,
         "mae": 0.2308295603556338
       },
-      "_objective_score": 8037783.981298011,
+      "_objective_score": 7993910.869743566,
       "_total_refs": 4843
     },
     "optimized": {
       "bond_length": {
         "n_refs": 849,
-        "r2": 0.04294535849937109,
-        "rmsd": 0.37063356207084147,
-        "mae": 0.0759025114089257
+        "r2": 0.03741497820354778,
+        "rmsd": 0.3717028802952003,
+        "mae": 0.07606511874487426
       },
       "bond_angle": {
         "n_refs": 1582,
-        "r2": 0.33510052371233934,
-        "rmsd": 14.220723715340824,
-        "mae": 7.407597739259764
+        "r2": 0.3314876358645703,
+        "rmsd": 14.259307198449022,
+        "mae": 7.4150880050446135
       },
       "eig_diagonal": {
         "n_refs": 2412,
-        "r2": -2.8215982345633974,
+        "r2": -2.821598234563398,
         "rmsd": 0.2789177087187873,
         "mae": 0.2308295603556338
       },
-      "_objective_score": 8027500.575006098,
+      "_objective_score": 8036089.476796419,
       "_total_refs": 4843
     }
   }
