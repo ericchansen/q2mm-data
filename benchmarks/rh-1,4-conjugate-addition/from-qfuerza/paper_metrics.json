@@ -1,0 +1,76 @@
+{
+  "provenance": {
+    "generator": "scripts/regenerate_convergence_results.py",
+    "timestamp_utc": "2026-05-28T18:04:31.417687+00:00",
+    "command_line": "scripts/regenerate_convergence_results.py --system heck-relay --system pd-allyl --system pd-conjugate --system rh-conjugate --starting-point qfuerza --ratio-tol -1 --output-dir /home/eric/repos/q2mm-data/benchmarks",
+    "q2mm": {
+      "git_sha": "29b61f8e84a418549162a070bae65b129780f55a",
+      "git_dirty": false
+    },
+    "q2mm_data": {
+      "git_sha": "72add3db946ef5286d5ab6f505025d107081477f",
+      "git_dirty": true
+    },
+    "ratio_tol": null,
+    "maxiter": 500,
+    "n_evals": 1,
+    "skip_optimization": false,
+    "starting_point": "qfuerza",
+    "devices": {
+      "jax_devices": [
+        "cuda:0"
+      ],
+      "openmm_platforms": [
+        "Reference",
+        "CPU",
+        "CUDA"
+      ]
+    }
+  },
+  "metrics": {
+    "seminario": {
+      "bond_length": {
+        "n_refs": 457,
+        "r2": -0.7118207913075418,
+        "rmsd": 0.5117538834826318,
+        "mae": 0.23336372451898346
+      },
+      "bond_angle": {
+        "n_refs": 926,
+        "r2": -0.33720199190966405,
+        "rmsd": 25.915976470228937,
+        "mae": 15.042196876134854
+      },
+      "eig_diagonal": {
+        "n_refs": 1244,
+        "r2": -4.847164978041488,
+        "rmsd": 0.3013975217528621,
+        "mae": 0.21955384382859647
+      },
+      "_objective_score": 26689617.91335561,
+      "_total_refs": 2627
+    },
+    "optimized": {
+      "bond_length": {
+        "n_refs": 457,
+        "r2": -0.22930613067049577,
+        "rmsd": 0.4336726385443764,
+        "mae": 0.21495554305698805
+      },
+      "bond_angle": {
+        "n_refs": 926,
+        "r2": -0.2637308519721797,
+        "rmsd": 25.193955832123763,
+        "mae": 14.805531067587015
+      },
+      "eig_diagonal": {
+        "n_refs": 1244,
+        "r2": -4.847164978041488,
+        "rmsd": 0.3013975217528621,
+        "mae": 0.21955384382859647
+      },
+      "_objective_score": 17764900.82060177,
+      "_total_refs": 2627
+    }
+  }
+}

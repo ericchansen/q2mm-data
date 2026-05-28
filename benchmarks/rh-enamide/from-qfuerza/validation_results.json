@@ -1,0 +1,145 @@
+{
+  "provenance": {
+    "generator": "scripts/regenerate_convergence_results.py",
+    "timestamp_utc": "2026-05-28T17:40:58.395135+00:00",
+    "command_line": "scripts/regenerate_convergence_results.py --system rh-enamide --starting-point qfuerza --ratio-tol -1 --output-dir /home/eric/repos/q2mm-data/benchmarks",
+    "q2mm": {
+      "git_sha": "29b61f8e84a418549162a070bae65b129780f55a",
+      "git_dirty": false
+    },
+    "q2mm_data": {
+      "git_sha": "72add3db946ef5286d5ab6f505025d107081477f",
+      "git_dirty": false
+    },
+    "ratio_tol": null,
+    "maxiter": 500,
+    "n_evals": 1,
+    "skip_optimization": false,
+    "starting_point": "qfuerza",
+    "devices": {
+      "jax_devices": [
+        "cuda:0"
+      ],
+      "openmm_platforms": [
+        "Reference",
+        "CPU",
+        "CUDA"
+      ]
+    }
+  },
+  "result": {
+    "system": "rh-enamide",
+    "n_molecules": 9,
+    "n_active_params": 182,
+    "starting_point": "qfuerza",
+    "starting_point_audit": {
+      "starting_point": "qfuerza",
+      "n_active": 182,
+      "n_frozen": 2560,
+      "by_type": {
+        "bond_fc": {
+          "qfuerza_overwritten": 8,
+          "retained_published": 0,
+          "frozen": 178
+        },
+        "bond_eq": {
+          "qfuerza_overwritten": 8,
+          "retained_published": 0,
+          "frozen": 178
+        },
+        "angle_fc": {
+          "qfuerza_overwritten": 22,
+          "retained_published": 1,
+          "frozen": 258
+        },
+        "angle_eq": {
+          "qfuerza_overwritten": 22,
+          "retained_published": 1,
+          "frozen": 258
+        },
+        "torsion_fc": {
+          "qfuerza_overwritten": 0,
+          "retained_published": 48,
+          "frozen": 1685
+        },
+        "stretch_bend_fc": {
+          "qfuerza_overwritten": 0,
+          "retained_published": 0,
+          "frozen": 3
+        },
+        "vdw_radius": {
+          "qfuerza_overwritten": 0,
+          "retained_published": 36,
+          "frozen": 0
+        },
+        "vdw_epsilon": {
+          "qfuerza_overwritten": 0,
+          "retained_published": 36,
+          "frozen": 0
+        }
+      }
+    },
+    "initial_obj_score": 391523.170176007,
+    "initial_jaxloss": 409695.6346169881,
+    "ratio": 1.0464147867233804,
+    "ratio_status": "ok_bypassed",
+    "ratio_passes": true,
+    "seminario": {
+      "bond_length": {
+        "n_refs": 500,
+        "r2": 0.9759398909092203,
+        "rmsd": 0.05767468384757048,
+        "mae": 0.030545804637684575
+      },
+      "bond_angle": {
+        "n_refs": 1050,
+        "r2": 0.9338534808271663,
+        "rmsd": 3.8632426293326865,
+        "mae": 2.990794188617068
+      },
+      "eig_diagonal": {
+        "n_refs": 1395,
+        "r2": 0.9716936291492432,
+        "rmsd": 0.0638740379103938,
+        "mae": 0.030469715682501872
+      }
+    },
+    "final_obj_score": 278391.76393135666,
+    "initial_obj_score_mean": 392367.2458307724,
+    "initial_obj_score_ci95": 0.0,
+    "final_obj_score_mean": 278391.76393135666,
+    "final_obj_score_ci95": 0.0,
+    "improvement_pct_mean": 29.04816421617753,
+    "improvement_significant": true,
+    "final_optimizer_score": 278605.25378789817,
+    "initial_optimizer_score": 390559.1397910506,
+    "n_iterations": 11,
+    "n_evaluations": 2,
+    "converged": true,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "jac_mode": "jax_loss",
+    "opt_time_s": 720.5890819049673,
+    "improvement_pct": 28.895200811178757,
+    "surrogate_improvement_pct": 28.665027801691657,
+    "optimized": {
+      "bond_length": {
+        "n_refs": 500,
+        "r2": 0.9838670735976099,
+        "rmsd": 0.04722728752031618,
+        "mae": 0.029721621302639865
+      },
+      "bond_angle": {
+        "n_refs": 1050,
+        "r2": 0.9530788414446594,
+        "rmsd": 3.253740031308618,
+        "mae": 2.54865631554585
+      },
+      "eig_diagonal": {
+        "n_refs": 1395,
+        "r2": 0.9698064424896686,
+        "rmsd": 0.06596892676425932,
+        "mae": 0.03277112597410768
+      }
+    }
+  }
+}
