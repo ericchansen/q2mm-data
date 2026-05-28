@@ -1,16 +1,13 @@
 {
   "provenance": {
     "generator": "scripts/regenerate_convergence_results.py",
-    "timestamp_utc": "2026-05-27T22:37:23.173058+00:00",
-    "command_line": "scripts/regenerate_convergence_results.py --system rh-conjugate --n-evals 10 --output-dir /home/eric/repos/q2mm-data/benchmarks --log-level INFO",
+    "timestamp_utc": "2026-05-28T03:35:06.377361+00:00",
+    "command_line": "scripts/regenerate_convergence_results.py --system rh-conjugate --n-evals 10 --output-dir /tmp/q2mm-fix-test",
     "q2mm": {
-      "git_sha": "86d848397f69832fef39104c337704373d60c857",
-      "git_dirty": false
-    },
-    "q2mm_data": {
-      "git_sha": "a3cc8d7d540b66a896fd1b439cebdf49ddc7bc5c",
+      "git_sha": "855c0868992e000e7afeb12aa5f1e1f4fd58c94c",
       "git_dirty": true
     },
+    "q2mm_data": {},
     "ratio_tol": 0.15,
     "maxiter": 500,
     "n_evals": 10,
@@ -30,23 +27,23 @@
     "system": "rh-conjugate",
     "n_molecules": 10,
     "n_active_params": 488,
-    "initial_obj_score": 6468197.7295803,
-    "initial_jaxloss": 6532877.0146037415,
-    "ratio": 1.0099995837677707,
+    "initial_obj_score": 6464571.330730133,
+    "initial_jaxloss": 6441876.131475579,
+    "ratio": 0.9964892955629294,
     "ratio_status": "ok",
     "ratio_passes": true,
     "seminario": {
       "bond_length": {
         "n_refs": 457,
-        "r2": 0.8918097560733633,
-        "rmsd": 0.12865481616059454,
-        "mae": 0.05447425008974926
+        "r2": 0.8878399832429736,
+        "rmsd": 0.1309938876386436,
+        "mae": 0.056730827782810744
       },
       "bond_angle": {
         "n_refs": 926,
-        "r2": 0.4454842381645594,
-        "rmsd": 16.688834857689724,
-        "mae": 11.022942698827642
+        "r2": 0.4720641833946059,
+        "rmsd": 16.28394522678011,
+        "mae": 10.920052482235633
       },
       "eig_diagonal": {
         "n_refs": 1244,
@@ -55,41 +52,41 @@
         "mae": 0.27255770882038477
       }
     },
-    "final_obj_score": 6440960.414222153,
-    "initial_obj_score_mean": 6430213.26266556,
-    "initial_obj_score_ci95": 26092.524294256793,
-    "final_obj_score_mean": 6435380.490532473,
-    "final_obj_score_ci95": 49696.31504475936,
-    "improvement_pct_mean": -0.08035857685957382,
-    "improvement_significant": false,
-    "final_optimizer_score": 6065297.681528205,
-    "initial_optimizer_score": 6349713.260742212,
-    "n_iterations": 1,
+    "final_obj_score": 5094628.513920791,
+    "initial_obj_score_mean": 6293272.170675544,
+    "initial_obj_score_ci95": 163838.62240465957,
+    "final_obj_score_mean": 5160404.119757806,
+    "final_obj_score_ci95": 98890.10869785814,
+    "improvement_pct_mean": 18.00125626532583,
+    "improvement_significant": true,
+    "final_optimizer_score": 5029235.926389622,
+    "initial_optimizer_score": 6145399.644865497,
+    "n_iterations": 4,
     "n_evaluations": 2,
     "converged": true,
     "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
     "jac_mode": "jax_loss",
-    "opt_time_s": 627.7275389070273,
-    "improvement_pct": 0.4210958986857416,
-    "surrogate_improvement_pct": 4.4791877606889186,
+    "opt_time_s": 690.7553385489737,
+    "improvement_pct": 21.191549241589314,
+    "surrogate_improvement_pct": 18.162589627648284,
     "optimized": {
       "bond_length": {
         "n_refs": 457,
-        "r2": 0.889696596952639,
-        "rmsd": 0.12990517558689313,
-        "mae": 0.05507317667934524
+        "r2": 0.8218605385983645,
+        "rmsd": 0.165086692298655,
+        "mae": 0.08918042369119644
       },
       "bond_angle": {
         "n_refs": 926,
-        "r2": 0.4532236703623872,
-        "rmsd": 16.57196174992739,
-        "mae": 10.895252379752609
+        "r2": 0.539784279740658,
+        "rmsd": 15.203717600159505,
+        "mae": 10.540916607350587
       },
       "eig_diagonal": {
         "n_refs": 1244,
-        "r2": -7.862431939033797,
-        "rmsd": 0.371059418502375,
-        "mae": 0.27255770882038477
+        "r2": -12.852633990598438,
+        "rmsd": 0.4639094111501908,
+        "mae": 0.3188457087271904
       }
     }
   }
