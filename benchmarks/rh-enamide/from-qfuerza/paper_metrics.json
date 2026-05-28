@@ -1,0 +1,76 @@
+{
+  "provenance": {
+    "generator": "scripts/regenerate_convergence_results.py",
+    "timestamp_utc": "2026-05-28T17:40:58.395135+00:00",
+    "command_line": "scripts/regenerate_convergence_results.py --system rh-enamide --starting-point qfuerza --ratio-tol -1 --output-dir /home/eric/repos/q2mm-data/benchmarks",
+    "q2mm": {
+      "git_sha": "29b61f8e84a418549162a070bae65b129780f55a",
+      "git_dirty": false
+    },
+    "q2mm_data": {
+      "git_sha": "72add3db946ef5286d5ab6f505025d107081477f",
+      "git_dirty": false
+    },
+    "ratio_tol": null,
+    "maxiter": 500,
+    "n_evals": 1,
+    "skip_optimization": false,
+    "starting_point": "qfuerza",
+    "devices": {
+      "jax_devices": [
+        "cuda:0"
+      ],
+      "openmm_platforms": [
+        "Reference",
+        "CPU",
+        "CUDA"
+      ]
+    }
+  },
+  "metrics": {
+    "seminario": {
+      "bond_length": {
+        "n_refs": 500,
+        "r2": 0.9759398909092203,
+        "rmsd": 0.05767468384757048,
+        "mae": 0.030545804637684575
+      },
+      "bond_angle": {
+        "n_refs": 1050,
+        "r2": 0.9338534808271663,
+        "rmsd": 3.8632426293326865,
+        "mae": 2.990794188617068
+      },
+      "eig_diagonal": {
+        "n_refs": 1395,
+        "r2": 0.9716936291492432,
+        "rmsd": 0.0638740379103938,
+        "mae": 0.030469715682501872
+      },
+      "_objective_score": 391523.170176007,
+      "_total_refs": 2945
+    },
+    "optimized": {
+      "bond_length": {
+        "n_refs": 500,
+        "r2": 0.9838670735976099,
+        "rmsd": 0.04722728752031618,
+        "mae": 0.029721621302639865
+      },
+      "bond_angle": {
+        "n_refs": 1050,
+        "r2": 0.9530788414446594,
+        "rmsd": 3.253740031308618,
+        "mae": 2.54865631554585
+      },
+      "eig_diagonal": {
+        "n_refs": 1395,
+        "r2": 0.9698064424896686,
+        "rmsd": 0.06596892676425932,
+        "mae": 0.03277112597410768
+      },
+      "_objective_score": 278391.76393135666,
+      "_total_refs": 2945
+    }
+  }
+}

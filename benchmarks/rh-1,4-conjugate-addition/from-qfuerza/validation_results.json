@@ -1,0 +1,145 @@
+{
+  "provenance": {
+    "generator": "scripts/regenerate_convergence_results.py",
+    "timestamp_utc": "2026-05-28T18:04:31.417687+00:00",
+    "command_line": "scripts/regenerate_convergence_results.py --system heck-relay --system pd-allyl --system pd-conjugate --system rh-conjugate --starting-point qfuerza --ratio-tol -1 --output-dir /home/eric/repos/q2mm-data/benchmarks",
+    "q2mm": {
+      "git_sha": "29b61f8e84a418549162a070bae65b129780f55a",
+      "git_dirty": false
+    },
+    "q2mm_data": {
+      "git_sha": "72add3db946ef5286d5ab6f505025d107081477f",
+      "git_dirty": true
+    },
+    "ratio_tol": null,
+    "maxiter": 500,
+    "n_evals": 1,
+    "skip_optimization": false,
+    "starting_point": "qfuerza",
+    "devices": {
+      "jax_devices": [
+        "cuda:0"
+      ],
+      "openmm_platforms": [
+        "Reference",
+        "CPU",
+        "CUDA"
+      ]
+    }
+  },
+  "result": {
+    "system": "rh-conjugate",
+    "n_molecules": 10,
+    "n_active_params": 488,
+    "starting_point": "qfuerza",
+    "starting_point_audit": {
+      "starting_point": "qfuerza",
+      "n_active": 488,
+      "n_frozen": 2742,
+      "by_type": {
+        "bond_fc": {
+          "qfuerza_overwritten": 15,
+          "retained_published": 9,
+          "frozen": 186
+        },
+        "bond_eq": {
+          "qfuerza_overwritten": 15,
+          "retained_published": 9,
+          "frozen": 186
+        },
+        "angle_fc": {
+          "qfuerza_overwritten": 14,
+          "retained_published": 32,
+          "frozen": 281
+        },
+        "angle_eq": {
+          "qfuerza_overwritten": 14,
+          "retained_published": 32,
+          "frozen": 281
+        },
+        "torsion_fc": {
+          "qfuerza_overwritten": 23,
+          "retained_published": 325,
+          "frozen": 1733
+        },
+        "stretch_bend_fc": {
+          "qfuerza_overwritten": 0,
+          "retained_published": 0,
+          "frozen": 3
+        },
+        "vdw_radius": {
+          "qfuerza_overwritten": 0,
+          "retained_published": 0,
+          "frozen": 36
+        },
+        "vdw_epsilon": {
+          "qfuerza_overwritten": 0,
+          "retained_published": 0,
+          "frozen": 36
+        }
+      }
+    },
+    "initial_obj_score": 26689617.91335561,
+    "initial_jaxloss": 13911368.702300804,
+    "ratio": 0.5212277203616126,
+    "ratio_status": "ok_bypassed",
+    "ratio_passes": true,
+    "seminario": {
+      "bond_length": {
+        "n_refs": 457,
+        "r2": -0.7118207913075418,
+        "rmsd": 0.5117538834826318,
+        "mae": 0.23336372451898346
+      },
+      "bond_angle": {
+        "n_refs": 926,
+        "r2": -0.33720199190966405,
+        "rmsd": 25.915976470228937,
+        "mae": 15.042196876134854
+      },
+      "eig_diagonal": {
+        "n_refs": 1244,
+        "r2": -4.847164978041488,
+        "rmsd": 0.3013975217528621,
+        "mae": 0.21955384382859647
+      }
+    },
+    "final_obj_score": 17764900.82060177,
+    "initial_obj_score_mean": 18557921.546528906,
+    "initial_obj_score_ci95": 0.0,
+    "final_obj_score_mean": 17764900.82060177,
+    "final_obj_score_ci95": 0.0,
+    "improvement_pct_mean": 4.273219519431926,
+    "improvement_significant": true,
+    "final_optimizer_score": 16573534.27307329,
+    "initial_optimizer_score": 21371881.314098325,
+    "n_iterations": 2,
+    "n_evaluations": 2,
+    "converged": true,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "jac_mode": "jax_loss",
+    "opt_time_s": 744.8241663699737,
+    "improvement_pct": 33.438909173322685,
+    "surrogate_improvement_pct": 22.45168298712067,
+    "optimized": {
+      "bond_length": {
+        "n_refs": 457,
+        "r2": -0.22930613067049577,
+        "rmsd": 0.4336726385443764,
+        "mae": 0.21495554305698805
+      },
+      "bond_angle": {
+        "n_refs": 926,
+        "r2": -0.2637308519721797,
+        "rmsd": 25.193955832123763,
+        "mae": 14.805531067587015
+      },
+      "eig_diagonal": {
+        "n_refs": 1244,
+        "r2": -4.847164978041488,
+        "rmsd": 0.3013975217528621,
+        "mae": 0.21955384382859647
+      }
+    }
+  }
+}

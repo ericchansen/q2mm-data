@@ -1,0 +1,145 @@
+{
+  "provenance": {
+    "generator": "scripts/regenerate_convergence_results.py",
+    "timestamp_utc": "2026-05-28T18:04:31.417687+00:00",
+    "command_line": "scripts/regenerate_convergence_results.py --system heck-relay --system pd-allyl --system pd-conjugate --system rh-conjugate --starting-point qfuerza --ratio-tol -1 --output-dir /home/eric/repos/q2mm-data/benchmarks",
+    "q2mm": {
+      "git_sha": "29b61f8e84a418549162a070bae65b129780f55a",
+      "git_dirty": false
+    },
+    "q2mm_data": {
+      "git_sha": "72add3db946ef5286d5ab6f505025d107081477f",
+      "git_dirty": true
+    },
+    "ratio_tol": null,
+    "maxiter": 500,
+    "n_evals": 1,
+    "skip_optimization": false,
+    "starting_point": "qfuerza",
+    "devices": {
+      "jax_devices": [
+        "cuda:0"
+      ],
+      "openmm_platforms": [
+        "Reference",
+        "CPU",
+        "CUDA"
+      ]
+    }
+  },
+  "result": {
+    "system": "pd-conjugate",
+    "n_molecules": 10,
+    "n_active_params": 340,
+    "starting_point": "qfuerza",
+    "starting_point_audit": {
+      "starting_point": "qfuerza",
+      "n_active": 340,
+      "n_frozen": 2744,
+      "by_type": {
+        "bond_fc": {
+          "qfuerza_overwritten": 16,
+          "retained_published": 4,
+          "frozen": 186
+        },
+        "bond_eq": {
+          "qfuerza_overwritten": 16,
+          "retained_published": 4,
+          "frozen": 186
+        },
+        "angle_fc": {
+          "qfuerza_overwritten": 20,
+          "retained_published": 12,
+          "frozen": 281
+        },
+        "angle_eq": {
+          "qfuerza_overwritten": 20,
+          "retained_published": 12,
+          "frozen": 281
+        },
+        "torsion_fc": {
+          "qfuerza_overwritten": 24,
+          "retained_published": 212,
+          "frozen": 1733
+        },
+        "stretch_bend_fc": {
+          "qfuerza_overwritten": 0,
+          "retained_published": 0,
+          "frozen": 3
+        },
+        "vdw_radius": {
+          "qfuerza_overwritten": 0,
+          "retained_published": 0,
+          "frozen": 37
+        },
+        "vdw_epsilon": {
+          "qfuerza_overwritten": 0,
+          "retained_published": 0,
+          "frozen": 37
+        }
+      }
+    },
+    "initial_obj_score": 8233503.42696977,
+    "initial_jaxloss": 9998858.614815226,
+    "ratio": 1.214411180307867,
+    "ratio_status": "ok_bypassed",
+    "ratio_passes": true,
+    "seminario": {
+      "bond_length": {
+        "n_refs": 473,
+        "r2": 0.44807522627662066,
+        "rmsd": 0.2502282107531602,
+        "mae": 0.12397047736228747
+      },
+      "bond_angle": {
+        "n_refs": 892,
+        "r2": -0.11363849815940519,
+        "rmsd": 19.25180903871405,
+        "mae": 10.260587718750037
+      },
+      "eig_diagonal": {
+        "n_refs": 1286,
+        "r2": -4.466469359371691,
+        "rmsd": 0.29518118985533687,
+        "mae": 0.23052543293166816
+      }
+    },
+    "final_obj_score": 8249591.961367296,
+    "initial_obj_score_mean": 8235736.2634579595,
+    "initial_obj_score_ci95": 0.0,
+    "final_obj_score_mean": 8249591.961367296,
+    "final_obj_score_ci95": 0.0,
+    "improvement_pct_mean": -0.16823872773603643,
+    "improvement_significant": true,
+    "final_optimizer_score": 8203076.649235258,
+    "initial_optimizer_score": 8261755.1250016745,
+    "n_iterations": 1,
+    "n_evaluations": 2,
+    "converged": true,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "jac_mode": "jax_loss",
+    "opt_time_s": 626.3754877049942,
+    "improvement_pct": -0.19540326351024095,
+    "surrogate_improvement_pct": 0.7102422533541874,
+    "optimized": {
+      "bond_length": {
+        "n_refs": 473,
+        "r2": 0.42730066006687684,
+        "rmsd": 0.25489403229408847,
+        "mae": 0.1254560436551701
+      },
+      "bond_angle": {
+        "n_refs": 892,
+        "r2": -0.1143759989591886,
+        "rmsd": 19.25818268451174,
+        "mae": 10.29053859283289
+      },
+      "eig_diagonal": {
+        "n_refs": 1286,
+        "r2": -4.466469359371691,
+        "rmsd": 0.29518118985533687,
+        "mae": 0.23052543293166816
+      }
+    }
+  }
+}

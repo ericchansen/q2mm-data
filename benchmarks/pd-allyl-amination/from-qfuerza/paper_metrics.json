@@ -1,0 +1,76 @@
+{
+  "provenance": {
+    "generator": "scripts/regenerate_convergence_results.py",
+    "timestamp_utc": "2026-05-28T18:04:31.417687+00:00",
+    "command_line": "scripts/regenerate_convergence_results.py --system heck-relay --system pd-allyl --system pd-conjugate --system rh-conjugate --starting-point qfuerza --ratio-tol -1 --output-dir /home/eric/repos/q2mm-data/benchmarks",
+    "q2mm": {
+      "git_sha": "29b61f8e84a418549162a070bae65b129780f55a",
+      "git_dirty": false
+    },
+    "q2mm_data": {
+      "git_sha": "72add3db946ef5286d5ab6f505025d107081477f",
+      "git_dirty": true
+    },
+    "ratio_tol": null,
+    "maxiter": 500,
+    "n_evals": 1,
+    "skip_optimization": false,
+    "starting_point": "qfuerza",
+    "devices": {
+      "jax_devices": [
+        "cuda:0"
+      ],
+      "openmm_platforms": [
+        "Reference",
+        "CPU",
+        "CUDA"
+      ]
+    }
+  },
+  "metrics": {
+    "seminario": {
+      "bond_length": {
+        "n_refs": 849,
+        "r2": 0.03406125286345563,
+        "rmsd": 0.3723498389652809,
+        "mae": 0.09232685538744928
+      },
+      "bond_angle": {
+        "n_refs": 1582,
+        "r2": 0.3354188339506786,
+        "rmsd": 14.21731933317002,
+        "mae": 7.312756134596036
+      },
+      "eig_diagonal": {
+        "n_refs": 2412,
+        "r2": -1.405494317890696,
+        "rmsd": 0.2212869193158996,
+        "mae": 0.1830234426499537
+      },
+      "_objective_score": 8012486.893064731,
+      "_total_refs": 4843
+    },
+    "optimized": {
+      "bond_length": {
+        "n_refs": 849,
+        "r2": 0.030767465024545748,
+        "rmsd": 0.3729841429688453,
+        "mae": 0.0924376095298184
+      },
+      "bond_angle": {
+        "n_refs": 1582,
+        "r2": 0.33718493598595145,
+        "rmsd": 14.198415742582563,
+        "mae": 7.316646036004892
+      },
+      "eig_diagonal": {
+        "n_refs": 2412,
+        "r2": -1.4054943178906965,
+        "rmsd": 0.2212869193158996,
+        "mae": 0.1830234426499537
+      },
+      "_objective_score": 7979788.97713229,
+      "_total_refs": 4843
+    }
+  }
+}
