@@ -1,0 +1,52 @@
+{
+  "rh-enamide": {
+    "source": "Donoghue 2008 JCTC 4:1313, doi:10.1021/ct800132a",
+    "n_molecules": 9,
+    "bond_length": {"r2": null, "rmsd": 0.03, "mae": null, "units": "Å"},
+    "bond_angle": {"r2": null, "rmsd": 2.0, "mae": null, "units": "deg"},
+    "torsion": {"r2": null, "rmsd": null, "mae": null, "units": "deg"},
+    "eigenvalue": {"r2": null, "rmsd": null, "mae": null, "units": "mdyn/Å"},
+    "energy": {"r2": null, "rmsd": 0.4, "mae": null, "units": "kcal/mol"},
+    "notes": "Donoghue 2008 is paywalled. Bond RMSD ≤ 0.03 Å and angle RMSD < 2° are upper bounds from Tables 5–6. Energy RMSD ~0.4 kcal/mol from Table 7. Eigenvalue R² not reported by the paper. External-selectivity MUE = 0.6 kcal/mol over 18 test cases."
+  },
+  "heck-relay": {
+    "source": "Rosales 2020 JACS 142:9700, doi:10.1021/jacs.0c01979",
+    "n_molecules": 24,
+    "bond_length": {"r2": null, "rmsd": null, "mae": null, "units": "Å"},
+    "bond_angle": {"r2": null, "rmsd": null, "mae": null, "units": "deg"},
+    "torsion": {"r2": null, "rmsd": null, "mae": null, "units": "deg"},
+    "eigenvalue": {"r2": null, "rmsd": null, "mae": null, "units": "mdyn/Å"},
+    "energy": {"r2": 0.89, "rmsd": 0.55, "mae": 0.43, "units": "kcal/mol"},
+    "notes": "Main text says slope/R² 'near unity' for bonds/angles/torsions/eigenvalues — numeric values are in SI Figs S3–S6 (not accessible). Training-set geometry mean RMSD = 0.25 Å. Energy values are EXTERNAL selectivity validation against 151 corrected experimental points: R² = 0.89, MUE = 1.8 kJ/mol = 0.43 kcal/mol, RMSD = 2.3 kJ/mol = 0.55 kcal/mol."
+  },
+  "pd-allyl": {
+    "source": "Wahlers 2021 Nat. Commun. 12:6508, doi:10.1038/s41467-021-27065-2",
+    "n_molecules": 21,
+    "bond_length": {"r2": 0.988, "rmsd": null, "mae": null, "units": "Å"},
+    "bond_angle": {"r2": 0.988, "rmsd": null, "mae": null, "units": "deg"},
+    "torsion": {"r2": 0.988, "rmsd": null, "mae": null, "units": "deg"},
+    "eigenvalue": {"r2": 0.998, "rmsd": null, "mae": null, "units": "mdyn/Å"},
+    "energy": {"r2": 0.41, "rmsd": null, "mae": 1.05, "units": "kcal/mol"},
+    "notes": "Main text: 'R² values for the internal validation range from 0.988 to 0.998 for geometric and Hessian eigenvalues.' The 0.988 is the AGGREGATE geometric R² (bonds+angles+torsions combined) — not per-category. The 0.998 is Hessian eigenvalue R². Charges R² = 0.822. Energy values are EXTERNAL: 77 selectivity predictions, R² = 0.41, MUE = 4.4 kJ/mol = 1.05 kcal/mol."
+  },
+  "pd-conjugate": {
+    "source": "Wahlers 2021 J. Org. Chem. 86:5660, doi:10.1021/acs.joc.1c00136; dissertation Ch. 5",
+    "n_molecules": 10,
+    "bond_length": {"r2": 0.99, "rmsd": null, "mae": null, "units": "Å"},
+    "bond_angle": {"r2": 0.99, "rmsd": null, "mae": null, "units": "deg"},
+    "torsion": {"r2": 0.99, "rmsd": null, "mae": null, "units": "deg"},
+    "eigenvalue": {"r2": null, "rmsd": null, "mae": null, "units": "mdyn/Å"},
+    "energy": {"r2": 0.877, "rmsd": null, "mae": 0.43, "units": "kcal/mol"},
+    "notes": "Internal R² > 0.99 (aggregate, slopes ~1.01) per docs citing paper. No per-category or eigenvalue R² accessible. DOI correction: 10.1021/acs.joc.1c00136 is correct (the joc.0c02918 in some README files is wrong, 404s). Wahlers dissertation Ch. 5 (not Ch. 4). Energy: 82 external predictions, R² = 0.877, MUE = 1.8 kJ/mol = 0.43 kcal/mol."
+  },
+  "rh-conjugate": {
+    "source": "Wahlers 2022 PhD Dissertation, U. Notre Dame, Ch. 6 (no published paper)",
+    "n_molecules": 10,
+    "bond_length": {"r2": 0.95, "rmsd": null, "mae": null, "units": "Å"},
+    "bond_angle": {"r2": 0.95, "rmsd": null, "mae": null, "units": "deg"},
+    "torsion": {"r2": 0.95, "rmsd": null, "mae": null, "units": "deg"},
+    "eigenvalue": {"r2": null, "rmsd": null, "mae": null, "units": "mdyn/Å"},
+    "energy": {"r2": 0.64, "rmsd": null, "mae": 0.98, "units": "kcal/mol"},
+    "notes": "No published paper. Internal aggregate (all categories pooled): bisphosphine slopes 0.94–1.01, R² 0.91–0.99; diene slopes 1.0–1.07, R² 0.92–0.99. No per-category breakdown. R² 0.95 cells are midpoint of those ranges. Energy values are bisphosphine 67-structure EXTERNAL validation: R² = 0.64, MUE = 4.1 kJ/mol = 0.98 kcal/mol. Diene class: R² = 0.37, MUE = 5.3 kJ/mol. Wahlers dissertation Ch. 6 (not Ch. 5)."
+  }
+}

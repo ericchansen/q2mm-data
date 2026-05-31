@@ -1,18 +1,21 @@
 {
   "provenance": {
     "generator": "scripts/regenerate_convergence_results.py",
-    "timestamp_utc": "2026-05-28T18:04:31.417687+00:00",
-    "command_line": "scripts/regenerate_convergence_results.py --system heck-relay --system pd-allyl --system pd-conjugate --system rh-conjugate --starting-point qfuerza --ratio-tol -1 --output-dir /home/eric/repos/q2mm-data/benchmarks",
+    "timestamp_utc": "2026-05-31T18:09:33.497806+00:00",
+    "command_line": "scripts/regenerate_convergence_results.py --system heck-relay --starting-point qfuerza --output-dir /home/eric/repos/q2mm-data/benchmarks --ratio-tol none --ftol 1e-12 --fc-fraction 0.05 --eq-fraction 0.05 --maxiter 500 --log-level INFO",
     "q2mm": {
-      "git_sha": "29b61f8e84a418549162a070bae65b129780f55a",
-      "git_dirty": false
+      "git_sha": "e81cf0040305d374c69733f5b59a8e64846c397b",
+      "git_dirty": true
     },
     "q2mm_data": {
-      "git_sha": "72add3db946ef5286d5ab6f505025d107081477f",
+      "git_sha": "0d454d09b56d70cd310178cfa60f7ef1b4f4e751",
       "git_dirty": true
     },
     "ratio_tol": null,
     "maxiter": 500,
+    "ftol": 1e-12,
+    "fc_fraction": 0.05,
+    "eq_fraction": 0.05,
     "n_evals": 1,
     "skip_optimization": false,
     "starting_point": "qfuerza",
@@ -79,60 +82,60 @@
         }
       }
     },
-    "initial_obj_score": 134272387.04778668,
-    "initial_jaxloss": 2.5840312742814717e+82,
-    "ratio": 1.9244696032415297e+74,
-    "ratio_status": "ok_bypassed",
-    "ratio_passes": true,
+    "initial_obj_score": 120526205.12679562,
+    "initial_jaxloss": "Infinity",
+    "ratio": null,
+    "ratio_status": "diverged",
+    "ratio_passes": false,
     "seminario": {
       "bond_length": {
         "n_refs": 1140,
-        "r2": -246.8614008679664,
-        "rmsd": 5.140571347716802,
-        "mae": 2.254258349708473
+        "r2": -623.5775460374263,
+        "rmsd": 8.16018725495794,
+        "mae": 3.002440985255435
       },
       "bond_angle": {
         "n_refs": 2157,
-        "r2": -7.954766129552221,
-        "rmsd": 51.44015216386193,
-        "mae": 39.13940184526949
+        "r2": -6.8283941354260795,
+        "rmsd": 48.09627721652009,
+        "mae": 35.347474672128676
       },
       "eig_diagonal": {
         "n_refs": 3121,
         "r2": -4.662423095633235,
         "rmsd": 0.30779771892061625,
-        "mae": 0.23430799747969416
+        "mae": 0.2343079974796942
       }
     },
-    "final_obj_score": 144608966.57961684,
-    "initial_obj_score_mean": 149604549.56484652,
+    "final_obj_score": 131687228.91986284,
+    "initial_obj_score_mean": 230934871.32877648,
     "initial_obj_score_ci95": 0.0,
-    "final_obj_score_mean": 144608966.57961684,
+    "final_obj_score_mean": 131687228.91986284,
     "final_obj_score_ci95": 0.0,
-    "improvement_pct_mean": 3.3391918893912576,
+    "improvement_pct_mean": 42.976464246327325,
     "improvement_significant": true,
-    "final_optimizer_score": 135241437.78816018,
-    "initial_optimizer_score": 135241437.78816018,
+    "final_optimizer_score": 103987177.48063745,
+    "initial_optimizer_score": 103987177.48063745,
     "n_iterations": 0,
     "n_evaluations": 2,
     "converged": true,
     "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
     "jac_mode": "jax_loss",
-    "opt_time_s": 1424.9423907269957,
-    "improvement_pct": -7.6982168553773045,
+    "opt_time_s": 1513.6638632640243,
+    "improvement_pct": -9.260246583990295,
     "surrogate_improvement_pct": 0.0,
     "optimized": {
       "bond_length": {
         "n_refs": 1140,
-        "r2": -147.2031101370861,
-        "rmsd": 3.9749859700690098,
-        "mae": 1.6825284313992925
+        "r2": -6227.8095750005,
+        "rmsd": 25.769706264057543,
+        "mae": 7.163604475715153
       },
       "bond_angle": {
         "n_refs": 2157,
-        "r2": -6.351079142446295,
-        "rmsd": 46.60694856213776,
-        "mae": 33.852411806908215
+        "r2": -8.347998529558874,
+        "rmsd": 52.557468457510886,
+        "mae": 39.96724347507855
       },
       "eig_diagonal": {
         "n_refs": 3121,

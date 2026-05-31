@@ -1,18 +1,21 @@
 {
   "provenance": {
     "generator": "scripts/regenerate_convergence_results.py",
-    "timestamp_utc": "2026-05-28T18:04:31.417687+00:00",
-    "command_line": "scripts/regenerate_convergence_results.py --system heck-relay --system pd-allyl --system pd-conjugate --system rh-conjugate --starting-point qfuerza --ratio-tol -1 --output-dir /home/eric/repos/q2mm-data/benchmarks",
+    "timestamp_utc": "2026-05-31T17:44:44.148275+00:00",
+    "command_line": "scripts/regenerate_convergence_results.py --system rh-conjugate --starting-point qfuerza --output-dir /home/eric/repos/q2mm-data/benchmarks --ratio-tol none --ftol 1e-12 --fc-fraction 0.20 --eq-fraction 0.05 --maxiter 500 --log-level INFO",
     "q2mm": {
-      "git_sha": "29b61f8e84a418549162a070bae65b129780f55a",
-      "git_dirty": false
+      "git_sha": "e81cf0040305d374c69733f5b59a8e64846c397b",
+      "git_dirty": true
     },
     "q2mm_data": {
-      "git_sha": "72add3db946ef5286d5ab6f505025d107081477f",
+      "git_sha": "0d454d09b56d70cd310178cfa60f7ef1b4f4e751",
       "git_dirty": true
     },
     "ratio_tol": null,
     "maxiter": 500,
+    "ftol": 1e-12,
+    "fc_fraction": 0.2,
+    "eq_fraction": 0.05,
     "n_evals": 1,
     "skip_optimization": false,
     "starting_point": "qfuerza",
@@ -79,23 +82,23 @@
         }
       }
     },
-    "initial_obj_score": 26689617.91335561,
-    "initial_jaxloss": 13911368.702300804,
-    "ratio": 0.5212277203616126,
+    "initial_obj_score": 19335316.753953587,
+    "initial_jaxloss": 18505316.96980904,
+    "ratio": 0.9570733805550492,
     "ratio_status": "ok_bypassed",
     "ratio_passes": true,
     "seminario": {
       "bond_length": {
         "n_refs": 457,
-        "r2": -0.7118207913075418,
-        "rmsd": 0.5117538834826318,
-        "mae": 0.23336372451898346
+        "r2": -20.588437550147827,
+        "rmsd": 1.817366860253106,
+        "mae": 0.49331732929983485
       },
       "bond_angle": {
         "n_refs": 926,
-        "r2": -0.33720199190966405,
-        "rmsd": 25.915976470228937,
-        "mae": 15.042196876134854
+        "r2": -0.4721262859116162,
+        "rmsd": 27.192028280363605,
+        "mae": 15.098487076264615
       },
       "eig_diagonal": {
         "n_refs": 1244,
@@ -104,41 +107,41 @@
         "mae": 0.21955384382859647
       }
     },
-    "final_obj_score": 17764900.82060177,
-    "initial_obj_score_mean": 18557921.546528906,
+    "final_obj_score": 7667556.063959273,
+    "initial_obj_score_mean": 21688046.083848383,
     "initial_obj_score_ci95": 0.0,
-    "final_obj_score_mean": 17764900.82060177,
+    "final_obj_score_mean": 7667556.063959273,
     "final_obj_score_ci95": 0.0,
-    "improvement_pct_mean": 4.273219519431926,
+    "improvement_pct_mean": 64.64616483054466,
     "improvement_significant": true,
-    "final_optimizer_score": 16573534.27307329,
-    "initial_optimizer_score": 21371881.314098325,
+    "final_optimizer_score": 7752942.333615594,
+    "initial_optimizer_score": 17017602.176075455,
     "n_iterations": 2,
     "n_evaluations": 2,
     "converged": true,
     "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
     "jac_mode": "jax_loss",
-    "opt_time_s": 744.8241663699737,
-    "improvement_pct": 33.438909173322685,
-    "surrogate_improvement_pct": 22.45168298712067,
+    "opt_time_s": 731.6033336690161,
+    "improvement_pct": 60.344295562722294,
+    "surrogate_improvement_pct": 54.44162900625784,
     "optimized": {
       "bond_length": {
         "n_refs": 457,
-        "r2": -0.22930613067049577,
-        "rmsd": 0.4336726385443764,
-        "mae": 0.21495554305698805
+        "r2": 0.7769984656337345,
+        "rmsd": 0.18470809286637094,
+        "mae": 0.1032505813869084
       },
       "bond_angle": {
         "n_refs": 926,
-        "r2": -0.2637308519721797,
-        "rmsd": 25.193955832123763,
-        "mae": 14.805531067587015
+        "r2": 0.33743692581372864,
+        "rmsd": 18.24242979843974,
+        "mae": 10.465484110842015
       },
       "eig_diagonal": {
         "n_refs": 1244,
-        "r2": -4.847164978041488,
-        "rmsd": 0.3013975217528621,
-        "mae": 0.21955384382859647
+        "r2": -4.746425256977547,
+        "rmsd": 0.29878988030747217,
+        "mae": 0.21625855914275363
       }
     }
   }
