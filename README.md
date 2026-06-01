@@ -17,16 +17,21 @@ benchmarks/
 │   ├── results/*.json                   # 100 optimizer runs (L-BFGS-B, Nelder-Mead, Optax, …) — full-matrix CLI output
 │   └── forcefields/                     # Optimized force fields per run from the matrix output
 ├── rh-enamide/                          # Rh-enamide TS (Donoghue 2008), 9 molecules
-│   └── convergence/                     # Ratio-gated end-to-end optimization
+│   ├── convergence/                     # Canonical: QFUERZA-start (starting_point="qfuerza", current default)
+│   └── from-published/                  # Opt-out baseline: published-FF-start (starting_point="published")
 ├── heck-relay/                          # Heck relay (Rosales 2020), 23 molecules
-│   ├── convergence/                     # Ratio-gated end-to-end optimization
+│   ├── convergence/                     # Canonical: QFUERZA-start
+│   ├── from-published/                  # Opt-out baseline: published-FF-start
 │   └── diagnostic/                      # Three-baseline diagnostic (q2mm#277 loader bug)
 ├── pd-allyl-amination/                  # Pd allyl amination (Wahlers 2021), 21 molecules
-│   └── convergence/
+│   ├── convergence/                     # Canonical: QFUERZA-start
+│   └── from-published/                  # Opt-out baseline: published-FF-start
 ├── pd-1,4-conjugate-addition/           # Pd 1,4-conjugate addition (Wahlers 2021), 10 molecules
-│   └── convergence/
+│   ├── convergence/                     # Canonical: QFUERZA-start
+│   └── from-published/                  # Opt-out baseline: published-FF-start
 └── rh-1,4-conjugate-addition/           # Rh 1,4-conjugate addition (Wahlers 2022), 10 molecules
-    └── convergence/
+    ├── convergence/                     # Canonical: QFUERZA-start
+    └── from-published/                  # Opt-out baseline: published-FF-start
 
 qfuerza-zenodo/                          # QFUERZA paper validation data (Farrugia 2025)
 ├── README.md
@@ -38,9 +43,17 @@ Two standard directory layouts:
 
 - `convergence/` — output of `scripts/regenerate_convergence_results.py`
   in q2mm, the canonical end-to-end ratio-gated optimization pipeline.
+  As of q2mm PR #290, the canonical default is `starting_point="qfuerza"`
+  (Hessian-derived bond/angle scalars on the chemist-provided OPT
+  topology — see the [QFUERZA-recovery doc](https://github.com/ericchansen/q2mm/blob/master/docs/benchmarks/qfuerza-recovery.md)).
   Every published-FF system has exactly one of these.  Contains
-  `validation_results.json`, `paper_metrics.json`, and the optimized
-  `.fld` force field.
+  `validation_results.json`, `paper_metrics.json`, the optimized
+  `.fld` force field, and `per_param_comparison.md`.
+- `from-published/` — same script, opt-out baseline produced with
+  `--starting-point published`.  These are the legacy
+  literature-start runs preserved for backend-vs-literature
+  comparisons and side-by-side with the canonical QFUERZA-start
+  results.  Same file layout as `convergence/`.
 - `results/` + `forcefields/` — output of the legacy full-matrix
   `q2mm-benchmark` CLI.  Currently kept only for `ch3f/`, which is
   the source of the optimizer-matrix table in
