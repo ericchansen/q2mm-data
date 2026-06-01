@@ -1,17 +1,24 @@
 {
   "provenance": {
     "generator": "scripts/regenerate_convergence_results.py",
-    "timestamp_utc": "2026-05-28T06:49:46.280315+00:00",
-    "command_line": "scripts/regenerate_convergence_results.py --system rh-enamide --n-evals 5 --output-dir /tmp/q2mm-fix-test",
+    "timestamp_utc": "2026-05-31T15:52:15.807613+00:00",
+    "command_line": "scripts/regenerate_convergence_results.py --system rh-enamide --starting-point qfuerza --output-dir /home/eric/repos/q2mm-data/benchmarks --ratio-tol none --ftol 1e-12 --fc-fraction 0.20 --eq-fraction 0.05 --maxiter 500 --log-level INFO",
     "q2mm": {
-      "git_sha": "855c0868992e000e7afeb12aa5f1e1f4fd58c94c",
-      "git_dirty": true
+      "git_sha": "e81cf0040305d374c69733f5b59a8e64846c397b",
+      "git_dirty": false
     },
-    "q2mm_data": {},
-    "ratio_tol": 0.15,
+    "q2mm_data": {
+      "git_sha": "0d454d09b56d70cd310178cfa60f7ef1b4f4e751",
+      "git_dirty": false
+    },
+    "ratio_tol": null,
     "maxiter": 500,
-    "n_evals": 5,
+    "ftol": 1e-12,
+    "fc_fraction": 0.2,
+    "eq_fraction": 0.05,
+    "n_evals": 1,
     "skip_optimization": false,
+    "starting_point": "qfuerza",
     "devices": {
       "jax_devices": [
         "cuda:0"
@@ -27,66 +34,114 @@
     "system": "rh-enamide",
     "n_molecules": 9,
     "n_active_params": 182,
-    "initial_obj_score": 489228.91097170254,
-    "initial_jaxloss": 520131.89571518067,
-    "ratio": 1.0631667181771798,
-    "ratio_status": "ok",
+    "starting_point": "qfuerza",
+    "starting_point_audit": {
+      "starting_point": "qfuerza",
+      "n_active": 182,
+      "n_frozen": 2560,
+      "by_type": {
+        "bond_fc": {
+          "qfuerza_overwritten": 8,
+          "retained_published": 0,
+          "frozen": 178
+        },
+        "bond_eq": {
+          "qfuerza_overwritten": 8,
+          "retained_published": 0,
+          "frozen": 178
+        },
+        "angle_fc": {
+          "qfuerza_overwritten": 22,
+          "retained_published": 1,
+          "frozen": 258
+        },
+        "angle_eq": {
+          "qfuerza_overwritten": 22,
+          "retained_published": 1,
+          "frozen": 258
+        },
+        "torsion_fc": {
+          "qfuerza_overwritten": 0,
+          "retained_published": 48,
+          "frozen": 1685
+        },
+        "stretch_bend_fc": {
+          "qfuerza_overwritten": 0,
+          "retained_published": 0,
+          "frozen": 3
+        },
+        "vdw_radius": {
+          "qfuerza_overwritten": 0,
+          "retained_published": 36,
+          "frozen": 0
+        },
+        "vdw_epsilon": {
+          "qfuerza_overwritten": 0,
+          "retained_published": 36,
+          "frozen": 0
+        }
+      }
+    },
+    "initial_obj_score": 392444.08590771764,
+    "initial_jaxloss": 411367.3404962605,
+    "ratio": 1.0482189826985764,
+    "ratio_status": "ok_bypassed",
     "ratio_passes": true,
     "seminario": {
       "bond_length": {
         "n_refs": 500,
-        "r2": 0.9865314845773111,
-        "rmsd": 0.04315153909906321,
-        "mae": 0.02517861864758527
+        "r2": 0.9759982100938914,
+        "rmsd": 0.05760474274262956,
+        "mae": 0.030540764899122278
       },
       "bond_angle": {
         "n_refs": 1050,
-        "r2": 0.9177322630486145,
-        "rmsd": 4.3083726713561274,
-        "mae": 3.082784453144462
+        "r2": 0.9337526492476844,
+        "rmsd": 3.866186008098871,
+        "mae": 2.990738976151084
       },
       "eig_diagonal": {
         "n_refs": 1395,
-        "r2": 0.9626721982611005,
-        "rmsd": 0.07334972382795417,
-        "mae": 0.03795068177034179
+        "r2": 0.9716936291492432,
+        "rmsd": 0.0638740379103938,
+        "mae": 0.030469715682501872
       }
     },
-    "final_obj_score": 269852.04848086444,
-    "initial_obj_score_mean": 488547.71596995916,
-    "initial_obj_score_ci95": 1078.151492464324,
-    "final_obj_score_mean": 270003.16644391743,
-    "final_obj_score_ci95": 341.4977409309725,
-    "improvement_pct_mean": 44.73351166776922,
+    "final_obj_score": 294269.2222343617,
+    "initial_obj_score_mean": 393673.4347966347,
+    "initial_obj_score_ci95": 0.0,
+    "final_obj_score_mean": 294269.2222343617,
+    "final_obj_score_ci95": 0.0,
+    "improvement_pct_mean": 25.25042427961227,
     "improvement_significant": true,
-    "final_optimizer_score": 269410.10642179585,
-    "initial_optimizer_score": 486178.6225804873,
-    "n_iterations": 13,
+    "final_optimizer_score": 294539.11436930473,
+    "initial_optimizer_score": 392776.53439196775,
+    "n_iterations": 20,
     "n_evaluations": 2,
     "converged": true,
     "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
     "jac_mode": "jax_loss",
-    "opt_time_s": 710.113396589004,
-    "improvement_pct": 44.841352906784174,
-    "surrogate_improvement_pct": 44.58618830423898,
+    "opt_time_s": 865.025861956994,
+    "improvement_pct": 25.016267845208795,
+    "surrogate_improvement_pct": 25.011020623912295,
     "optimized": {
       "bond_length": {
         "n_refs": 500,
-        "r2": 0.9892292358484726,
-        "rmsd": 0.03858865882035943,
-        "mae": 0.026085829029484264
+        "r2": 0.9791370465920702,
+        "rmsd": 0.05370618710858985,
+        "mae": 0.03100116942415037
       },
       "bond_angle": {
         "n_refs": 1050,
-        "r2": 0.9544536171710511,
-        "rmsd": 3.205718866468329,
-        "mae": 2.576282648118119
+        "r2": 0.9502931260016327,
+        "rmsd": 3.348934958450696,
+        "mae": 2.669418905342925
       },
       "eig_diagonal": {
         "n_refs": 1395,
-        "r2": 0.9682801723470084,
-        "rmsd": 0.06761572126942914,
-        "mae": 0.034760003039555884
+        "r2": 0.9688562402995179,
+        "rmsd": 0.06699891898748452,
+        "mae": 0.03341417351260553
       }
     }
   }

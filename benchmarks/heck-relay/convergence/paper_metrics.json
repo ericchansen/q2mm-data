@@ -1,17 +1,24 @@
 {
   "provenance": {
     "generator": "scripts/regenerate_convergence_results.py",
-    "timestamp_utc": "2026-05-28T05:22:13.045666+00:00",
-    "command_line": "scripts/regenerate_convergence_results.py --system heck-relay --n-evals 10 --ratio-tol none --output-dir /tmp/q2mm-fix-test",
+    "timestamp_utc": "2026-05-31T18:09:33.497806+00:00",
+    "command_line": "scripts/regenerate_convergence_results.py --system heck-relay --starting-point qfuerza --output-dir /home/eric/repos/q2mm-data/benchmarks --ratio-tol none --ftol 1e-12 --fc-fraction 0.05 --eq-fraction 0.05 --maxiter 500 --log-level INFO",
     "q2mm": {
-      "git_sha": "855c0868992e000e7afeb12aa5f1e1f4fd58c94c",
+      "git_sha": "e81cf0040305d374c69733f5b59a8e64846c397b",
       "git_dirty": true
     },
-    "q2mm_data": {},
+    "q2mm_data": {
+      "git_sha": "0d454d09b56d70cd310178cfa60f7ef1b4f4e751",
+      "git_dirty": true
+    },
     "ratio_tol": null,
     "maxiter": 500,
-    "n_evals": 10,
+    "ftol": 1e-12,
+    "fc_fraction": 0.05,
+    "eq_fraction": 0.05,
+    "n_evals": 1,
     "skip_optimization": false,
+    "starting_point": "qfuerza",
     "devices": {
       "jax_devices": [
         "cuda:0"
@@ -27,45 +34,45 @@
     "seminario": {
       "bond_length": {
         "n_refs": 1140,
-        "r2": 0.981038111369397,
-        "rmsd": 0.044962219041832396,
-        "mae": 0.026791195009444716
+        "r2": -623.5775460374263,
+        "rmsd": 8.16018725495794,
+        "mae": 3.002440985255435
       },
       "bond_angle": {
         "n_refs": 2157,
-        "r2": 0.8093155299739117,
-        "rmsd": 7.506418655976105,
-        "mae": 4.923241345978376
+        "r2": -6.8283941354260795,
+        "rmsd": 48.09627721652009,
+        "mae": 35.347474672128676
       },
       "eig_diagonal": {
         "n_refs": 3121,
-        "r2": -12.61826783986958,
-        "rmsd": 0.47733708251347673,
-        "mae": 0.3415968177674508
+        "r2": -4.662423095633235,
+        "rmsd": 0.30779771892061625,
+        "mae": 0.2343079974796942
       },
-      "_objective_score": 3134582.5069351243,
+      "_objective_score": 120526205.12679562,
       "_total_refs": 6418
     },
     "optimized": {
       "bond_length": {
         "n_refs": 1140,
-        "r2": 0.9829738647681238,
-        "rmsd": 0.04260543271806141,
-        "mae": 0.03131348044650616
+        "r2": -6227.8095750005,
+        "rmsd": 25.769706264057543,
+        "mae": 7.163604475715153
       },
       "bond_angle": {
         "n_refs": 2157,
-        "r2": 0.9088473814705358,
-        "rmsd": 5.189908428716197,
-        "mae": 3.8950710311777827
+        "r2": -8.347998529558874,
+        "rmsd": 52.557468457510886,
+        "mae": 39.96724347507855
       },
       "eig_diagonal": {
         "n_refs": 3121,
-        "r2": -14.279594658062587,
-        "rmsd": 0.5056152394338148,
-        "mae": 0.36250216811886293
+        "r2": -4.662423095633235,
+        "rmsd": 0.30779771892061625,
+        "mae": 0.23430799747969416
       },
-      "_objective_score": 1453747.6150394878,
+      "_objective_score": 131687228.91986284,
       "_total_refs": 6418
     }
   }

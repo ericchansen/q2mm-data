@@ -1,0 +1,72 @@
+{
+  "provenance": {
+    "generator": "scripts/regenerate_convergence_results.py",
+    "timestamp_utc": "2026-05-28T03:35:06.377361+00:00",
+    "command_line": "scripts/regenerate_convergence_results.py --system rh-conjugate --n-evals 10 --output-dir /tmp/q2mm-fix-test",
+    "q2mm": {
+      "git_sha": "855c0868992e000e7afeb12aa5f1e1f4fd58c94c",
+      "git_dirty": true
+    },
+    "q2mm_data": {},
+    "ratio_tol": 0.15,
+    "maxiter": 500,
+    "n_evals": 10,
+    "skip_optimization": false,
+    "devices": {
+      "jax_devices": [
+        "cuda:0"
+      ],
+      "openmm_platforms": [
+        "Reference",
+        "CPU",
+        "CUDA"
+      ]
+    }
+  },
+  "metrics": {
+    "seminario": {
+      "bond_length": {
+        "n_refs": 457,
+        "r2": 0.8878399832429736,
+        "rmsd": 0.1309938876386436,
+        "mae": 0.056730827782810744
+      },
+      "bond_angle": {
+        "n_refs": 926,
+        "r2": 0.4720641833946059,
+        "rmsd": 16.28394522678011,
+        "mae": 10.920052482235633
+      },
+      "eig_diagonal": {
+        "n_refs": 1244,
+        "r2": -7.862431939033797,
+        "rmsd": 0.371059418502375,
+        "mae": 0.27255770882038477
+      },
+      "_objective_score": 6464571.330730133,
+      "_total_refs": 2627
+    },
+    "optimized": {
+      "bond_length": {
+        "n_refs": 457,
+        "r2": 0.8218605385983645,
+        "rmsd": 0.165086692298655,
+        "mae": 0.08918042369119644
+      },
+      "bond_angle": {
+        "n_refs": 926,
+        "r2": 0.539784279740658,
+        "rmsd": 15.203717600159505,
+        "mae": 10.540916607350587
+      },
+      "eig_diagonal": {
+        "n_refs": 1244,
+        "r2": -12.852633990598438,
+        "rmsd": 0.4639094111501908,
+        "mae": 0.3188457087271904
+      },
+      "_objective_score": 5094628.513920791,
+      "_total_refs": 2627
+    }
+  }
+}

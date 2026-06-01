@@ -1,0 +1,72 @@
+{
+  "provenance": {
+    "generator": "scripts/regenerate_convergence_results.py",
+    "timestamp_utc": "2026-05-28T05:22:13.045666+00:00",
+    "command_line": "scripts/regenerate_convergence_results.py --system heck-relay --n-evals 10 --ratio-tol none --output-dir /tmp/q2mm-fix-test",
+    "q2mm": {
+      "git_sha": "855c0868992e000e7afeb12aa5f1e1f4fd58c94c",
+      "git_dirty": true
+    },
+    "q2mm_data": {},
+    "ratio_tol": null,
+    "maxiter": 500,
+    "n_evals": 10,
+    "skip_optimization": false,
+    "devices": {
+      "jax_devices": [
+        "cuda:0"
+      ],
+      "openmm_platforms": [
+        "Reference",
+        "CPU",
+        "CUDA"
+      ]
+    }
+  },
+  "metrics": {
+    "seminario": {
+      "bond_length": {
+        "n_refs": 1140,
+        "r2": 0.981038111369397,
+        "rmsd": 0.044962219041832396,
+        "mae": 0.026791195009444716
+      },
+      "bond_angle": {
+        "n_refs": 2157,
+        "r2": 0.8093155299739117,
+        "rmsd": 7.506418655976105,
+        "mae": 4.923241345978376
+      },
+      "eig_diagonal": {
+        "n_refs": 3121,
+        "r2": -12.61826783986958,
+        "rmsd": 0.47733708251347673,
+        "mae": 0.3415968177674508
+      },
+      "_objective_score": 3134582.5069351243,
+      "_total_refs": 6418
+    },
+    "optimized": {
+      "bond_length": {
+        "n_refs": 1140,
+        "r2": 0.9829738647681238,
+        "rmsd": 0.04260543271806141,
+        "mae": 0.03131348044650616
+      },
+      "bond_angle": {
+        "n_refs": 2157,
+        "r2": 0.9088473814705358,
+        "rmsd": 5.189908428716197,
+        "mae": 3.8950710311777827
+      },
+      "eig_diagonal": {
+        "n_refs": 3121,
+        "r2": -14.279594658062587,
+        "rmsd": 0.5056152394338148,
+        "mae": 0.36250216811886293
+      },
+      "_objective_score": 1453747.6150394878,
+      "_total_refs": 6418
+    }
+  }
+}
