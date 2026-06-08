@@ -2,7 +2,7 @@
   "provenance": {
     "generator": "scripts/regenerate_convergence_results.py",
     "timestamp_utc": "2026-05-26T20:04:20.101990+00:00",
-    "command_line": "scripts/regenerate_convergence_results.py --system pd-conjugate --ratio-tol none --output-dir /home/eric/repos/q2mm-data/benchmarks --log-level INFO",
+    "command_line": "scripts/regenerate_convergence_results.py --system pd-conjugate --ratio-tol none --output-dir /home/eric/repos/q2mm-data/benchmarks --log-level INFO --starting-point published",
     "q2mm": {
       "git_sha": "8c7f898f0ea3a3de4db3ecc55f95c95942c8f396",
       "git_dirty": false
@@ -14,6 +14,7 @@
     "ratio_tol": null,
     "maxiter": 500,
     "skip_optimization": false,
+    "starting_point": "published",
     "devices": {
       "jax_devices": [
         "cuda:0"
