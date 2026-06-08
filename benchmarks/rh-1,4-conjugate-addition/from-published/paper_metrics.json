@@ -2,7 +2,7 @@
   "provenance": {
     "generator": "scripts/regenerate_convergence_results.py",
     "timestamp_utc": "2026-05-28T03:35:06.377361+00:00",
-    "command_line": "scripts/regenerate_convergence_results.py --system rh-conjugate --n-evals 10 --output-dir /tmp/q2mm-fix-test",
+    "command_line": "scripts/regenerate_convergence_results.py --system rh-conjugate --n-evals 10 --output-dir /tmp/q2mm-fix-test --starting-point published",
     "q2mm": {
       "git_sha": "855c0868992e000e7afeb12aa5f1e1f4fd58c94c",
       "git_dirty": true
@@ -12,6 +12,7 @@
     "maxiter": 500,
     "n_evals": 10,
     "skip_optimization": false,
+    "starting_point": "published",
     "devices": {
       "jax_devices": [
         "cuda:0"

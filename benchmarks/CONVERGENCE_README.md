@@ -48,20 +48,29 @@ From a checkout of `ericchansen/q2mm`, with the supporting-info data
 extracted (or `Q2MM_SUPPORTING_INFO` pointing at it):
 
 ```bash
-# Canonical: QFUERZA-start (default since q2mm PR #290) — writes to convergence/
+# Canonical: QFUERZA-start (default since q2mm PR #290) — writes to convergence/.
+# These are the exact flags used to generate the committed artifacts.
 python scripts/regenerate_convergence_results.py \
-    --output-dir ../q2mm-data/benchmarks
+    --output-dir ../q2mm-data/benchmarks \
+    --ratio-tol none --ftol 1e-12 \
+    --fc-fraction 0.20 --eq-fraction 0.05 \
+    --maxiter 500
+
+# heck-relay needs tighter FC bounds (TS landscape with large negative FCs)
+python scripts/regenerate_convergence_results.py \
+    --system heck-relay \
+    --output-dir ../q2mm-data/benchmarks \
+    --ratio-tol none --ftol 1e-12 \
+    --fc-fraction 0.05 --eq-fraction 0.05 \
+    --maxiter 500
 
 # Opt-out: published-FF-start baseline — writes to from-published/
 python scripts/regenerate_convergence_results.py \
     --starting-point published \
     --output-dir ../q2mm-data/benchmarks
-
-# Single system, ratio-gate bypass for borderline systems
-python scripts/regenerate_convergence_results.py \
-    --system pd-conjugate \
-    --ratio-tol none \
-    --output-dir ../q2mm-data/benchmarks
 ```
 
 See `scripts/regenerate_convergence_results.py --help` for all options.
+Every committed JSON's `provenance.command_line` records the exact
+flags used for that artifact — use those as the authoritative
+reproduction command if you need to re-derive a specific file.
